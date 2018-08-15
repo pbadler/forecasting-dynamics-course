@@ -66,7 +66,7 @@ Unless you arrange for an extension ahead of time, you will lose 10% of the assi
 
 #### **Course Schedule**
 
-The details course schedule is available on the [course website] TBA
+The detailed course schedule is [here]({{ site.baseurl }} schedule)
 
 **Disclaimer:** This schedule represents my current plans and
 objectives. As we go through the semester, you should expect these
