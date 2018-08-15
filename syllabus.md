@@ -35,7 +35,8 @@ This course will be a mixture of discussion of primary literature and hands-on e
 1)  The free online text book [Forecasting: Principles and Practice](https://www.otexts.org/fpp) 
     will be used for some class activities, but is not required
 
-2)  All reading materials will be made available through the [course website](https://weecology.github.io/forecasting-dynamics-course/). 
+2)  Almost all reading materials will be made available through the [course website](https://pbadler.github.io/forecasting-dynamics-course/). I will occassionally post a 
+less public document (e.g. draft manuscripts) on the course [Canvas page](https://usu.instructure.com/). 
 
 3)  Laptops: On class activity days, laptops will be required for class.
 
@@ -66,7 +67,7 @@ Unless you arrange for an extension ahead of time, you will lose 10% of the assi
 
 #### **Course Schedule**
 
-The detailed course schedule is [here](https://pbadler.github.io/forecasting-dynamics-course/schedule.html)
+The detailed course schedule is [here](https://pbadler.github.io/forecasting-dynamics-course/schedule.html).
 
 **Disclaimer:** This schedule represents my current plans and
 objectives. As we go through the semester, you should expect these
