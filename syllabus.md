@@ -1,70 +1,34 @@
 ---
+title: "Syllabus"
 layout: page
-title: Syllabus
 ---
 
-## WIS 6934 Ecological Dynamics and Forecasting
 
-  |**Instructors**        |Dr. Morgan Ernest        | Dr. Ethan White
-  |**Office Location**    |Building 150, Room 2     | Building 150, Room 1
-  |**Phone**              |352-294-2082             | 352-294-2084
-  |**Email (preferred)**  |<skmorgane@ufl.edu>      | <ethanwhite@ufl.edu>
-  |**Office Hours**       |Tuesday 3-4              |
-                                                 
-<br>
+## WILD 6900 Ecological Dynamics and Forecasting
+
+**Instructor**      | Dr. Peter Adler <br>
+**Office Location** | BNR 287 <br>
+**Email**           | <peter.adler@usu.edu> <br>
+**Office Hours**    | Wednesday 1:30-3 <br>                 
+			
 												 
 #### **Times and Locations**
 
-Tuesday, Period 5 (11:45-12:35), MCCB 2102
-
-Thursday, Period 5 (11:45-12:35), MCCB 2102
+Tuesday and Thursday, 10:30 - 11:45, Quinney Library reading room (3rd floor)
 
 #### **Course Objectives**
 
-The goal of this class is to provide students a basic understanding of
-how populations and communities change through time and to provide fundamental 
-concepts of how to forecast those changes. By the end of the semester, students will:
+The goal of this class is to provide students a basic understanding of how populations, communities, and ecosystems change through time and to provide fundamental concepts of how to forecast those changes. By the end of the semester, students will:
 
-1)  Have an appreciation of the dynamics of species and communities.
+1. Have an appreciation of the dynamics of species, communities and ecosystem processes and the models used to represent those dynamics.
 
-2)  Understand the basic concepts of forecasting that apply across fields 
-    and the challenges within ecology
+2. Understand the basic concepts of forecasting that apply across fields along with the particular challenges within ecology.
 
-3)  Have a basic understanding of working with time series data
+3. Have a basic understanding of working with time series data.
 
-#### **General Course Structure and Expectations**
+#### **Course Structure and Expectations**
 
-This course is a mixture class discussion of primary literature and
-hands-on experience involving some class activities. Completing assigned
-readings, intellectual engagement with topics, and discussion
-participation are the main ways students will learn in this class.
-Tuesdays are typically concept discussion days. Thursdays will be a mix
-of tools or concept discussion. You are expected to come prepared to
-discuss the assigned papers.
-
-#### **Course Grading**
-
-80% of grade will be based on class participation, which includes leading one 
-discussion during the semester 
-20% will be based on completeion of class activities
-
-#### **Attendance Policy**
-
-Two days can be missed without impacts on your grade without the need
-to submit make-up work, though we recommend that students attempt any 
-missed class activities on their own time because additional class 
-activities or discussions may rely on that knowledge. 
-
-Up to 4 additional missed days can be made-up by submitting make-up work.
-Class activities can be made-up on the student's time within a week by doing
-the activity and submitting the code/data for instruvtor evaluation. Missed 
-discussions can be made up by providing a written summary of the readings 
-for the day(s) missed. Written summaries will involve 1-paragraph summary of the 
-main questions and findings for each assigned paper and 1 paragraph applying the 
-paper to how we think about either ecological dynamics or forecasting.
-
-If a student anticpates missing more than 6 class days (i.e. 3 weeks of classes), you
-must talk to the instructors beforehand.
+This course will be a mixture of discussion of primary literature and hands-on experience working with data and models. About half of the class meetings will feature discussion of assigned papers; you will be expected to come to class prepared for the discussion. Students will take turns leading the discussions. The other half of the class meetings will feature computer labs involving data analysis. Most will be exercises using data I provide. I may offer an option for students to replace some of these exercises with an independent project using their own data. 
 
 #### **Course Materials**
 
@@ -72,86 +36,38 @@ must talk to the instructors beforehand.
     will be used for some class activities, but is not required
 
 2)  All reading materials will be made available through the [course website](https://weecology.github.io/forecasting-dynamics-course/). 
-    
 
 3)  Laptops: On class activity days, laptops will be required for class.
 
 
-### **UF Policies**
+#### **Grading**
 
-#### **University Policy on Accommodating Students with Disabilities**
+60% of your grade will be based on class participation, which includes leading one discussion during the semester. 40% will be based on the computer lab exercises. Grades at the end of the course will be assigned as: A (93 to 100% of total possible points); A- (90 to 92.9%); B+ (87 to 89.9%); B (83 to 86.9%); B- (80 to 82.9%); C+ (77 to 79.9%); C (73 to 76.9%); C- (70 to 72.9%); D (60 to 69.9%); and F (<59.9%). The official USU policy is, "For work in graded courses, A shall denote exceptional performance, B above average performance, C satisfactory performance, D poor performance, and F failing performance." (http://www.usu.edu/policies/pdf/Grading.pdf).
 
-Students requesting accommodation for disabilities must first register
-with the Dean of Students Office (http://www.dso.ufl.edu/drc/). The Dean
-of Students Office will provide documentation to the student who must
-then provide this documentation to the instructor when requesting
-accommodation. You must submit this documentation prior to submitting
-assignments or taking the quizzes or exams. Accommodations are not
-retroactive, therefore, students should contact the office as soon as
-possible in the term for which they are seeking accommodations.
+#### **Attendance Policy**
 
-#### **University Policy on Academic Misconduct**
+Two days can be missed without impacts on your grade without the need to submit make-up work, though I recommend that students attempt any missed class activities on their own time because additional class activities or discussions may rely on that knowledge.
 
-Academic honesty and integrity are fundamental values of the University
-community. Students should be sure that they understand the UF Student
-Honor Code at http://www.dso.ufl.edu/students.php.
+If you miss additional days, you will need to submit make-up work. Class activities can be made-up on the student's time within a week by doing the activity and submitting the code/data for instructor evaluation. Missed discussions can be made up by providing a written summary of the readings for the day(s) missed. Written summaries will involve 1-paragraph summary of the main questions and findings for each assigned paper and 1 paragraph applying the paper to how we think about either ecological dynamics or forecasting.
 
-#### **Netiquette and Communication Courtesy**
+If a student anticipates missing more than 6 class days (i.e. 3 weeks of classes), you must talk to me beforehand.
 
-All members of the class are expected to follow rules of common courtesy
-in all email messages, threaded discussions and chats.
+#### **Late policy**
 
+Unless you arrange for an extension ahead of time, you will lose 10% of the assignment's total points for each day the assignment is late.
 
-#### **Getting Help**
+#### **USU policies**
 
-Other resources are available at
-http://www.distance.ufl.edu/getting-help for:
-
--   Counseling and Wellness resources
-
--   Disability resources
-
--   Resources for handling student concerns and complaints
-
--   Library Help Desk support
-
-Should you have any complaints with your experience in this course
-please visit http://www.distance.ufl.edu/student-complaints to submit a
-complaint.
-
-Most importantly, if you are struggling for any reason please come talk
-to us and we will do our best to help.
-
-#### **Grading scale**
-
--   **A 93-100**
-
--   **A- 90-92**
-
--   **B+ 87-89**
-
--   **B 83-86**
-
--   **B- 80-82**
-
--   **C+ 77-79**
-
--   **C 73-76**
-
--   **C- 70-72**
-
--   **D+ 67-69**
-
--   **D 60-66**
-
--   **E <60**
-
+* The schedule of topics, assignments, and all other details in this syllabus are subject to change with fair warning. 
+* ADA compliance: Students with physical, sensory, emotional or medical impairments may be eligible for reasonable accommodations in accordance with the Americans with Disabilities Act and Section 504 of the Rehabilitation Act of 1973. All accommodations are coordinated through the Disability Resource Center in Room 101 of the University Inn, 797-2444 voice, 797-0740 TTY, or toll free at 1-800-259-2966. Please contact the DRC as early in the semester as possible. Alternate format materials (Braille, large print or digital) are available with advance notice. 
+* Sexual harassment is defined by the Affirmative Action/Equal Employment Opportunity Commission as any "unwelcome sexual advances, requests for sexual favors, and other verbal or physical conduct of a sexual nature." If you feel you are a victim of sexual harassment, you may talk to or file a complaint with the Affirmative Action/Equal Employment Opportunity Office located in Old Main, Room 161, or call the AA/EEO Office at 797-1266. 
+* Students whose religious activities conflict with the class schedule should contact me at the beginning of the semester to make alternative arrangements. 
+* Cheating and other forms of academic dishonesty are listed in The Code of Policies and Procedures for Students at Utah State University (revised September 2009), Article VI, Section 1. If you are found to be engaged in academic misconduct, at a minimum you will receive no credit for that exam or assignment. Repeat or serious offenders can expect more serious consequences. 
 
 #### **Course Schedule**
 
-The details course schedule is available on the [course website](https://weecology.github.io/forecasting-dynamics-course/Canvas).
+The details course schedule is available on the [course website] TBA
 
-**Disclaimer:** This syllabus represents our current plans and
-objectives. As we go through the semester, those plans may need to
-change to enhance the class learning opportunity. Such changes,
-communicated clearly, are not unusual and should be expected.
+**Disclaimer:** This schedule represents my current plans and
+objectives. As we go through the semester, you should expect these
+plans to change. I will clearly communicate those changes.

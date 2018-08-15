@@ -1,130 +1,233 @@
 ---
+title: "Schedule"
+output:
+  html_document: default
 layout: page
-title: Schedule
 ---
-Activity days when laptops are required are noted in italics. Discussion leaders are listed below each topic.
+*Italics* indicate that laptops are required for lab activities.
 
-* August 23: Introduction. Can we forecast in ecology?
-    * Discussion Leader: Ethan and Morgan
+* August 28
+    * Discussion: Introduction; Can we forecast in ecology?
+        * Discussion Leader: Peter
+    * *Lab:* Set up `R`, [Intro to R assignment]({{ site.baseurl }}/assignments/intro2R) 
+<br><br>
 
-* August 28: Why dynamics and forecasting? (reading)
-    * Video: [NEON: Forecasting](https://www.youtube.com/watch?v=Lgi_e7N-C8E)
-    * Reading:[Ecological Forecasts: An Emerging Imperative](https://doi.org/10.1126/science.293.5530.657)
-    * Discussion leader: Ethan
-        * [Discussion questions]({{ site.baseurl }}/discussion/clark_etal_2001)
+* August 30
+    * Discussion: Why dynamics and forecasting? 
+        * Reading: [Clark et al. 2001](https://doi.org/10.1126/science.293.5530.657)
+            * [Discussion questions]({{ site.baseurl }}/discussion/clark_etal_2001)
+        * Reading: [Houlahan et al. 2017](https://onlinelibrary.wiley.com/doi/abs/10.1111/oik.03726)
+            * Discussion questions: ??
+        * Discussion Leader: Peter
+    * *Lab:* [Intro to R assignment]({{ site.baseurl }}/assignments/intro2R)
+<br><br>        
 
-* August 30: Paleo dynamics - Pleistocene/Holocene transition
-    * Reading: Just the Introduction of [Ecological Change, Range Fluctuations and Population Dynamics during the Pleistocene](https://doi.org/10.1016/j.cub.2009.06.030)
-    * Reading: Read all of [Novel climates, no-analog communities, and ecological surprises](https://doi.org/10.1890/070037)
-    * Discussion leader: Morgan
-        * [Discussion questions]({{ site.baseurl }}/discussion/paleodynamics)
+* September 4
+    * Discussion: What IS forecasting?
+        * Reading: [The quiet revolution of numerical weather prediction](https://doi.org/10.1038/nature14956)
+            * Discussion leader: ??
+            * [Discussion questions]({{ site.baseurl }}/discussion/weather) 
+        * Reading: [2016 Forecast of Fire Season Severity](https://www.ess.uci.edu/~amazonfirerisk/ForecastWeb/SAMFSS2018.html)
+            * Discussion leader: ??
+            * Discussion questions: ??     
+    * *Lab:* Preview next lab
+<br><br>
+
+* September 6
+    * Discussion: What IS NOT forecasting?
+        * Reading: [Thuiller et al. 2005](http://www.pnas.org/content/102/23/8245)
+          * Discussion leader: ??
+          * Discussion questions?
+    * *Lab:* Working with time series data in R
+        * Before class install R Packages: forecast, ggplot2, lubridate, dplyr, scales, gridExtra, ggthemes, reshape2, zoo
+        * Reading: Look through the following [NEON Working with Time Series Data Tutorials](https://www.neonscience.org/tabular-time-series)
+            * Time Series 02: Date-time conversions
+            * Time Series 04: Maniulate data with dplyr
+            * Time Series 05: Plot time series with ggplot2
+            * Also, [Julian day conversion](https://www.neonscience.org/julian-day-conversion-r)
+<br><br>
+
+* September 11
+    * *Lab:* Time series decomposition and autocorrelation assignment
+<br><br>
+
+* September 13
+    * DUE: Autocorrelation assignment
+    * Discussion: Understanding vs. prediction
+        * Reading: [Breiman 2001](https://projecteuclid.org/euclid.ss/1009213726)
+          * Discussion leader: ??
+          * Discussion questions: ??
+<br><br>
+
+* September 18
+    * Discussion: Understanding vs. prediction and model selection
+        * Reading: Tredennick et al. in prep (link on Canvas?)
+          * Discussion leader: ??
+          * Discussion questions: ??
+    * *Lab:* Model selection vignettes [Butterfly vignettes](https://github.com/atredennick/modselr)
+<br><br>
+
+* September 20
+    * Discussion: Ecological surprises    
+        * Reading: [Black-swan events in animal populations](https://doi.org/10.1073/pnas.1611525114)
+            * Discussion leader: ??
+            * [Discussion questions]({{ site.baseurl }}/discussion/blackswans)
+        * Reading: [Repeated regime shifts in a desert rodent community](https://doi.org/10.1101/163931)
+            * Discussion leader: ??
+            * [Discussion questions]({{ site.baseurl }}/discussion/regimeshifts)
+<br><br>
+
+* September 25
+    * Discussion: Introduction to forecasting
+        * Reading: [Forecasting Principles & Process Chapter 1](https://www.otexts.org/fpp/1)
+            * Discussion leader: Peter
+            * [Discussion questions]({{ site.baseurl }}/discussion/fpp_1_questions) 
+    * *Lab:* Introduction to time series modeling
+<br><br>
+
+* September 27
+    * *Lab:* Introduction to forecasting assignment
+<br><br>
+
+* October 2
+    * Discussion: Data-driven vs. mechanistic models
+        * Reading: [Renwick et al. 2018](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.13900)  
+            * Discussion leader: Peter
+            * Discussion questions: ??
+<br><br>
+
+* October 4
+    * Due: Introduction to forecasting assignment
+    * Discussion: The importance of uncertainty
+        * Reading: Dietze Chapter 2
+            * Discussion leader: Peter ??
+            * [Discussion questions]({{ site.baseurl }}/discussion/dietz-ch2-questions)
+    * *Lab:* Evaluating forecasts assignment
+<br><br>
+
+* October 9
+    * Discussion: Economic forecasts
+        * Reading: Nate Silver chapter
+            * Discussion leader: ??
+            * Discussion questions: ??
+<br><br>
+
+* October 11 
+    * Discussion: Elections
+      * Reading:
+[The fivethirtyeight.com Predictive Model of the 2008 Presidential Election](https://www.causeweb.org/cause/archive/stats/STATS_50.pdf)
+        * Discussion leader: ??
+        * [Discussion questions]({{ site.baseurl }}/discussion/elections)
+<br><br>
+
+* October 16
+    * DUE: Evaluating forecasts assignment
+    * Discussion: Changes in phenology
+        * Reading [Shifting plant phenology in response to global change](https://doi.org/10.1016/j.tree.2007.04.003)
+          * Discussion leader: ??
+          * [Discussion questions]({{ site.baseurl }}/discussion/phenology)
+<br><br> 
+
+* October 18
+    * Discussion: Primary production
+        * Reading [Luo]()
+          * Discussion leader: ??
+          * Discussion questions: ??
+    * *Lab:* Primary production ??
+<br><br>
+
+* October 23
+    * Discussion: Population models--plants
+ <br><br>
  
-* September 4: Modern Range Shifts
-    * Reading: [Poleward shifts in geographical ranges of butterfly species associated with regional warming](https://doi.org/10.1038/21181)
-    * Discussion leader: Morgan
-        * [Discussion questions]({{ site.baseurl }}/discussion/rangeshifts)
-
-* *September 6: Time series data*
-
-* September 11:  Community Dynamics – Species Composition and Richness 
-    * Reading: [Assemblage time series reveal biodiversity change but not systematic loss](https://doi.org/10.1126/science.1248484)
-    * Discussion leader: Morgan
-    * [Discussion questions]({{ site.baseurl }}/discussion/dornelas)
+ * October 25
+    * Discussion: Population models--animals
+ <br><br>
  
-* *September 13:  Working with time series data in R*
-    * Readings: [NEON Working with Time Series Data Tutorial](http://neondataskills.org/tutorial-series/tabular-time-series/)
-        * Before class install R Packages: ggplot2, lubridate, dplyr, scales, gridExtra, ggthemes, reshape2, zoo
-        * Look through the following tutorials
-            *  [Time Series 02](http://neondataskills.org/R/time-series-convert-date-time-class-POSIX/)
-            *  [Time Series 04](http://neondataskills.org/R/time-series-subset-dplyr/)
-            *  [Time Series 05](http://neondataskills.org/R/time-series-plot-ggplot/)
-            *  [Julian Days](http://neondataskills.org/R/julian-day-conversion/)
+* October 30
+    * Discussion: Short-term ecological forecasting [quantitative]
+        * Reading: [State-space modeling to support management of brucellosis in the Yellowstone bison population](https://doi.org/10.1890/14-1413.1) 
+          * Discussion leader: ??
+          * Discussion questions: ??
+    * *Lab:* State-space models
+ <br><br>
  
-* September 18: Changes in phenology
-    * Reading [Shifting plant phenology in response to global change](https://doi.org/10.1016/j.tree.2007.04.003)
-    * Discussion leader: Morgan
-    * [Discussion questions]({{ site.baseurl }}/discussion/phenology)
+* November 1
+    * Discussion: Remotely-sensed population time-series
+        * Reading: [Tredennick et al. 2016](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.1525)
+          * Discussion leader: ??
+          * Discussion questions: ??
+<br><br>
+ 
+* November 6
+    * Discussion: Biodiversity--species richness
+        * Reading: [Harris et al.]()
+<br><br>  
+ 
+* November 8
+     * Discussion: Biodiversity--community responses to disturbance
+        * Reading: [Species-level and community-level responses to disturbance: a cross-community analysis](https://doi.org/10.1890/13-2250.1)
+          * Discussion leader: ??
+          * [Discussion questions]({{ site.baseurl }}/discussion/supp)
+<br><br>  
 
-* *September 20: Basics of Time Series – Time Series Decomposition*
-      * Bring computers. Install the R package: forecast
+* November 13
+    * *Lab:* Let the forecasting tournament begin!
+<br><br>  
+
+* November 15
+    * *Lab:* Work on forecasting tournament
+<br><br>      
+
+* November 20
+    * Discussion: Scenario based foreasting
+        * Reading: [Scenario Planning: a Tool for Conservation in an Uncertain World](https://doi.org/10.1046/j.1523-1739.2003.01491.x)
+          * Discussion leader: ??
+	        * [Discussion questions]({{ site.baseurl }}/discussion/scenarios)
+<br><br> 
+
+* November 22
+    * Thanksgiving, no class
+<br><br> 
+
+* November 27
+    * Validation of species distribution models ?
+<br><br> 
+
+* November 29
+    * Model-free forecasts ?
+<br><br> 
+
+* December 4
+    * DUE: Forecasting tournament assignment 
+<br><br> 
+
+* December 6
+    * Discussion: Can we forecast in ecology (and what can we forecast)?
+        * Reading: [Prediction, precaution, and policy under global change](https://doi.org/10.1126/science.1261824)
+          * Discussion Leader: ??
+          * Discussion questions: ??
+<br><br> 
+
      
-* September 25: Ecological Suprises
-    * Reading: [Black-swan events in animal populations](https://doi.org/10.1073/pnas.1611525114)
-    * Discussion leader:
-    * Discussion Questions
-
-* *September 27: Basics of Time Series – Time Series Autocorrelation*
-     
-* October 2: Regime shifts
-    * Reading: [Repeated regime shifts in a desert rodent community](https://doi.org/10.1002/ecy.2373)
-    * Discussion leader: Morgan
-    * [Discussion questions]({{ site.baseurl }}/discussion/regimeshifts)
-
-* *October 4: Introduction to time-series modeling*
  
-* October 9: Introduction to forecasting
-    * Reading: [Forecasting Principles & Process Chapter 1](https://www.otexts.org/fpp/1)
-    * Discussion leader: Ethan
-    * [Discussion questions]({{ site.baseurl }}/discussion/fpp_1_questions)
- 
-* *October 11: Introduction to forecasting in R*
-       
-* October 16: Importance of uncertainty
-    * Reading: Dietze Chapter 2
-    * Discussion leader: Ethan
-    * [Discussion questions]({{ site.baseurl }}/discussion/dietz-ch2-questions)
 
-* *October 18: Evaluating forecasts*
 
-* October 23:  Forecasting using Species Distribution Models
-    * Reading: [Species Distribution Models:Ecological Explanation and Prediction Across Space and Time](http://eurobasin.dtuaqua.dk/eurobasin/documents/Training%20ISM/Elith_and_Leathwick_2009.pdf)
-    * Discussion Leader:
-    * Discussion Questions
+
+
+
+
+
+
+
+
+
     
-* *October 25: Species Distribution Models*  
-    
-* October 30: Forecasting using State-space model [quantitative]
-    * Reading: [Forecasting climate change impacts on plant populations over large spatial extents](https://doi.org/10.1002/ecs2.1525)
-    * Discussion leader: 
 
-* *November 1:  State-space model*
-    
-* November 6: How do other fields forecast - Hurricane Forecasting
-    * [How Hurricane Forecast Models Work](http://www.hurricanescience.org/science/forecast/models/modelswork/)
-    * [Numerical Weather Predictions](https://www.weather.gov/media/ajk/brochures/NumericalWeatherPrediction.pdf)
-    * [Types of Hurricane Forecast Models](http://www.hurricanescience.org/science/forecast/models/modeltypes/)
-    * [Dynamical Models](http://www.hurricanescience.org/science/forecast/models/modeltypes/dynamicalmodels/)
-    * [Ensemble or Consensus Models](http://www.hurricanescience.org/science/forecast/models/modeltypes/ensemble/)
-    * Discussion leader: 
-    * [Discussion questions]({{ site.baseurl }}/discussion/weather)
-     
-* November 8: How do other fields forecast - Elections
-    * Reading:[A User's Guide to FiveThirtyEight's 2016 Election Forecast](https://fivethirtyeight.com/features/a-users-guide-to-fivethirtyeights-2016-general-election-forecast/)
-    * Reading: [Which election forecast should you trust](http://www.slate.com/articles/news_and_politics/politics/2016/08/fivethirtyeight_vs_the_upshot_who_should_you_trust_to_forecast_the_2016.html)
-    * Discussion leader:
-    * [Discussion questions]({{ site.baseurl }}/discussion/elections) 
-    
-* November 13: Data-driven models for forecasting [quantitative]
-    * Reading: [Equation-free mechanistic ecosystem forecasting using empirical dynamic modeling](https://doi.org/10.1073/pnas.1417063112) 
-    * YouTube video: https://www.youtube.com/watch?v=fevurdpiRYg
-    * Discussion leader: 
-    * Discussion questions
 
-* *November 15:  Empirical Dynamic Modeling Tutorial*
-    * [Code]({{ site.baseurl }}/lectures/rEDM_primer)    
 
-* *November 20: GAMs*
 
-* November 27: Scenario based foreasting
-    * Reading: [Why global scenarios need ecology](https://doi.org/10.1890/1540-9295(2003)001[0322:WGSNE]2.0.CO;2)
-    * Discussion leader: 
-	* [Discussion questions]({{ site.baseurl }}/discussion/scenarios)
+
     
-* November 29:  Near-term Iterative Forecasting
-    * Reading: [Iterative near-term ecological forecasting: Needs, opportunities, and challenges](https://doi.org/10.1073/pnas.1710231115 )
-    * Discussion Leader: 
-    * Discussion Questions
- 
-* December 4: Can we forecast in ecology (and what can we forecast)?
-    * Reading: [Prediction, precaution, and policy under global change](https://doi.org/10.1126/science.1261824)
-    * Discussion Leader: Ethan and Morgan
+
+
