@@ -2,7 +2,7 @@
 title: "Introduction to R"
 output:
   html_document: default
-layout: page
+layout: nil
 ---
 
 First, if you are completely new to R, download this tutorial and work through the exercises:
