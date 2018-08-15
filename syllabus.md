@@ -66,7 +66,7 @@ Unless you arrange for an extension ahead of time, you will lose 10% of the assi
 
 #### **Course Schedule**
 
-The detailed course schedule is [here]({{ site.baseurl }} schedule)
+The detailed course schedule is [here](https://pbadler.github.io/forecasting-dynamics-course/schedule.html)
 
 **Disclaimer:** This schedule represents my current plans and
 objectives. As we go through the semester, you should expect these
