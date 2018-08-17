@@ -1,9 +1,13 @@
+
+rm(list=ls())
+setwd("C:/Repos/forecasting-dynamics-course/lectures")
+
 library(forecast)
 library(ggplot2)
 
 # Data setup
 
-data = read.csv("portal_timeseries.csv", stringsAsFactors = FALSE)
+data = read.csv("./../data/portal_timeseries.csv", stringsAsFactors = FALSE)
 head(data)
 NDVI_ts = ts(data$NDVI, start = c(1992, 3), end = c(2014, 11), frequency = 12)
 

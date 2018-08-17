@@ -1,8 +1,11 @@
+rm(list=ls())
+setwd("C:/Repos/forecasting-dynamics-course/lectures")
+
 library(forecast)
 
 # Data setup
 
-data = read.csv("portal_timeseries.csv", stringsAsFactors = FALSE)
+data = read.csv("./../data/portal_timeseries.csv", stringsAsFactors = FALSE)
 head(data)
 NDVI_ts = ts(data$NDVI, start = c(1992, 3), end = c(2014, 11), frequency = 12)
 rain_ts = ts(data$rain, start = c(1992, 3), end = c(2014, 11), frequency = 12)
@@ -32,6 +35,7 @@ pacf(NDVI_ts)
 # y_t = c + b1 * y_t-1 + b2 * y_t-2 ... + e_t
 
 arima_model = Arima(NDVI_ts, c(2, 0, 0))
+arima_model
 plot(NDVI_ts)
 lines(fitted(arima_model), col = 'red')
 
@@ -42,6 +46,7 @@ acf(resid(arima_model))
 # Still has autocorrelation at 1 and 2 years, so maybe some seasonal signal
 
 seasonal_arima_model = Arima(NDVI_ts, c(2, 0, 0), seasonal = c(2, 0, 0))
+seasonal_arima_model
 plot(NDVI_ts)
 lines(fitted(seasonal_arima_model), col = 'red')
 acf(resid(seasonal_arima_model))
@@ -52,12 +57,15 @@ acf(resid(seasonal_arima_model))
 
 # START WITH SEASONAL = FALSE, NOTE 1 AND 2 YEAR AUTOCORRELATION, REMOVE
 
-arima_model = auto.arima(NDVI_ts, seasonal = FALSE)
+arima_model = auto.arima(NDVI_ts, seasonal = TRUE)
 plot(NDVI_ts)
 lines(fitted(arima_model), col='red')
-model_forecast = forecast(arima_model)
 acf(resid(arima_model))
 Box.test(resid(arima_model))
+
+# what happens next?
+model_forecast = forecast(arima_model)
+plot(model_forecast)
 
 # Incorporating external co-variates
 # y_t = c + b1 * y_t-1 + b2 * x_t ... + e_t

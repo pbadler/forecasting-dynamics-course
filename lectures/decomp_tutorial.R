@@ -1,6 +1,9 @@
+
 library(forecast)
 library(stlplus)
 library(fpp)
+
+setwd("C:/Repos/forecasting-dynamics-course/lectures")
 
 ## Inherent scales within a time series
 #  Talk about scales within the data
@@ -17,7 +20,7 @@ library(fpp)
 # To extract these components, there are generally 3 basic steps.
 # 1) we fit something to the observed data to extract the trend.
 # 2) we fit a seasona model to the remaining data to pull out the season
-# 3) whatever is left over it the irregular fluctuations (residuals)
+# 3) whatever is left over are the irregular fluctuations (residuals)
 
 
 ## Time Series Objects
@@ -27,7 +30,7 @@ library(fpp)
 # knows to work with it in a special way.
 
 # Some packages will require you to put your data into a time series object specific to that
-# package. FOr today, we will use the standard ts object in the base package. It's limitation is
+# package. For today, we will use the standard ts object in the base package. It's limitation is
 # is that it can only take regularly spaced data (i.e. monthly, daily, quarterly, annual). There are
 # other methods that can take irregular data and import that into a time series object. Packazges
 # that can handle irregular data include zoo and xts.
@@ -41,7 +44,7 @@ library(fpp)
 # Exploring  patterns with decomposition using NDVI
 # need to make sure yur data is already in chronological order
 
-NDVI = read.csv('NDVI_portal.csv', stringsAsFactors = FALSE)
+NDVI = read.csv('./../data/portal_timeseries.csv', stringsAsFactors = FALSE)
 head(NDVI)
 
 NDVI.ts = ts(NDVI$NDVI, start = c(1992, 3), end = c(2014, 11), frequency = 12)
@@ -63,33 +66,26 @@ data.2000
 # a moving average is a classic way of extracting the 'cross year'  
 # pattern in the data
 
-#lose data on the front and back because as the name implies it is 
-# averaging over a window of values. Order is the size of the window. In this case it is a window
-# of 5 months centered on the center month in the window. So for May, it is 
-# averaging values from march-July
-
-# these are typically odd so that the window is balanced. But can do an even order MA. 2 x m-MA
+# We lose data on the front and back because as the name implies it is 
+# averaging over a window of values. Order is the size of the window. 
 
 MA_m13 = ma(NDVI.ts, order=13, centre = TRUE)
-
 
 plot(NDVI.ts)
 lines(MA_m13, col="blue", lwd = 3)
 
-#if get even question
-MA_m12 = ma(NDVI.ts, order=12, centre = FALSE)
-MA_2x12 = ma(MA_m12, order=2,centre=FALSE)
-
-plot(NDVI.ts)
-lines(MA_2x12, col="green", lwd = 3)
+# # even length window
+# MA_m12 = ma(NDVI.ts, order=12, centre = FALSE)
+# MA_2x12 = ma(MA_m12, order=2,centre=FALSE)
+# plot(NDVI.ts)
+# lines(MA_2x12, col="green", lwd = 3)
 
 # Classic Decomposition uses a Moving Average to obtain a trend, then detrend the observed data.
 
 # two basic ways to remove a seasonal signal - additive or multiplicative. 
 # Additive: Observed = Trend + Seasonal + Irregular (fluctuations in the time series stable with trend)
-# Multiplicative Observed = Trend*Seasonal*Irregular (fluctuations in the time series increase with trend)
-# in our data, not much of a trend, no clear relationship between trend and seasonality
-
+# Multiplicative: Observed = Trend*Seasonal*Irregular (fluctuations in the time series increase with trend)
+# In our data, not much of a trend, no clear relationship between trend and seasonality
 
 Seasonal_residual_add = NDVI.ts - MA_m13
 plot(Seasonal_residual_add)
@@ -111,6 +107,10 @@ fit_add = decompose(NDVI.ts, type = 'additive')
 plot(fit_add)
 str(fit_add)
 
+fit_mult = decompose(NDVI.ts, type = 'multiplicative')
+plot(fit_mult)
+str(fit_mult)
+
 # In our case slight differences in our seasonal and irregular signals with + vs X
 # both of them are picking up a big summer peak in greeness and a smaller winter peak
 
@@ -127,22 +127,22 @@ str(fit_add)
 # user can control the trend averaging
 # can control sensitivity to outliers. Less impact on trend and season, but irregular remains
 
-# Drawbacks: no ability to handle calendar variation, only additive. Can make it give you
-# a multiplicative requires logs and back transformations.
+# # Drawbacks: no ability to handle calendar variation, only additive. Can make it give you
+# # a multiplicative requires logs and back transformations.
+# 
+# fit_stl = stl(NDVI.ts, s.window='periodic', robust=TRUE)
+# plot(fit_stl)
+# str(fit_stl) # can find what windows it was using
+# fit_stl$time.series # can extract data
+# 
+# fit_stl_12mo = stl(NDVI.ts, t.window=13, s.window='periodic', robust=TRUE)
+# plot(fit_stl_12mo)
+# 
+# fit_stl_24mo = stl(NDVI.ts, t.window=25, s.window=7, robust=TRUE)
+# plot(fit_stl_24mo)
+# str(fit_stl_24mo)
 
-fit_stl = stl(NDVI.ts, s.window='periodic', robust=TRUE)
-plot(fit_stl)
-str(fit_stl) # can find what windows it was using
-fit_stl$time.series # can extract data
-
-fit_stl_12mo = stl(NDVI.ts, t.window=13, s.window='periodic', robust=TRUE)
-plot(fit_stl_12mo)
-
-fit_stl_24mo = stl(NDVI.ts, t.window=25, s.window=7, robust=TRUE)
-plot(fit_stl_24mo)
-str(fit_stl_24mo)
-
-# How to choose windows sizes for seasonal vs. trend. An art. 
+# How to choose windows sizes for seasonal vs. trend? An art. 
 # But there are some rules to the art. First, the trend window must be
 # larger than the season window - odd orders
 # (1.5* number of observations in a seasonal cycle)/(1-1.5*seasonal smooth order^-1)
@@ -168,3 +168,5 @@ plot_seasonal(s_25)
 
 plot(s_25)
 plot_trend(s_25)
+
+

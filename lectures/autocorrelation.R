@@ -1,3 +1,7 @@
+rm(list=ls())
+
+setwd("C:/Repos/forecasting-dynamics-course/lectures")
+
 library(forecast)
 library(astsa)
 
@@ -5,7 +9,7 @@ library(astsa)
 # was embedded in a timeseries. This week we're going to talk about a different
 # issue with time scales. 
 
-# Let's start by thinking about an extreme case ofa time series. Say I have a normal distribution
+# Let's start by thinking about an extreme case of a time series. Say I have a normal distribution
 # centered on zero and at each time step I randomly draw a value from the distribution
 # what does my time series look like? (highly variable, no trend). 
 
@@ -23,26 +27,26 @@ plot(whitenoise, main="White noise")
 # rnorm generates a vector of numbers randomly drawn from a normal distribution
 # with mean = 0 and sd = 1
 
-data = read.csv('portal_timeseries.csv')
+data = read.csv('./../data/portal_timeseries.csv')
 head(data)
 NDVI.ts = ts(data$NDVI, start = c(1992, 3), end = c(2014, 11), frequency = 12)
 plot(NDVI.ts, xlab = "Year", ylab="greenness", main="NDVI")
 
 
 # clearly the biological time series and the white noise series look different
-# from last week, we know that the NDVI data has seasonality in the signal, so
+# from white noise, we know that the NDVI data has seasonality in the signal, so
 # that's clearly one major difference, related to that is that the value at one
 # time step is not necessarily indpendent from previous time steps. We can
 # explore that dependence by looking at lag plots.How much does one time step 
 # tell you about the next?
 
 # Lag plots are simply the correlation between values at time t and some time step in
-# the past. The difference btween time t and a value inthe past is the lag. 
+# the past. The difference btween time t and a value in the past is the lag. 
 
 # So here, let's plot all the lags up to 12 months.
 lag.plot(NDVI.ts, lags=12, do.lines=FALSE)
 
-# The lag.plot is showing you the autocorrelation within a time series. WHich
+# The lag.plot is showing you the autocorrelation within a time series. Which
 # is great as a data viz step, but hard to interpret more precisely than to see
 # how the time series is related to itself and when things look more strongly related
 
@@ -75,9 +79,6 @@ acf(whitenoise)
 # If there's a pattern to your spikes,
 # that is usually another good sign that you have autocorrelation structure in your 
 # time series
-
-lag.plot(whitenoise, lag = 12, do.lines = FALSE)
-acf(whitenoise)
 
 # HAVE STUDENTS LOAD data, create a TS object AND PLOT PPT AND RODENTS
 # Check first and last dates, frequency, sorted
@@ -130,9 +131,11 @@ tsdisplay(x)
 # across different lags. You can use the cross-correlation function to dig into that
 
 ccf.plantsrain = ccf(PPT.ts, NDVI.ts)
+plot(ccf.plantsrain)
 lag2.plot(PPT.ts, NDVI.ts, 12)
 
 ccf.plantrat = ccf(NDVI.ts, rats.ts)
+plot(ccf.plantrat)
 lag2.plot(NDVI.ts, rats.ts, 12)
 
 # Some take home messages for autocorrelation: 
@@ -148,9 +151,6 @@ lag2.plot(NDVI.ts, rats.ts, 12)
 #    estimates areok. Need to deal with that autocorrelation for statsitical tests
 #    many modern R approaches have a method for dealing or specifying autocorrelated
 #   errors - sometimes referred to as covariance in the errors.
-
-
-
 
 
 # Stationarity: mathematically no moment of the distribution for the time series depends upon or changes predictably with time.
