@@ -54,7 +54,7 @@ avg_forecast$mean
 # Visualize
 
 plot(NDVI_ts)
-lines(avg_forecast$mean, col = 'pink')
+lines(avg_forecast$mean, col = 'red')
 
 # Better to use built-in plotting functions
 
@@ -109,7 +109,8 @@ seasonal_arima_model = auto.arima(NDVI_ts)
 seasonal_arima_forecast = forecast(seasonal_arima_model, h = 36, level = c(80, 99))
 plot(seasonal_arima_forecast)
 
-# Forecasts from cross-sectional approach
+# Forecasts from cross-sectional approach 
+# (We ignore temporal dependence, treat each year as an independent observation )
 
 library(dplyr)
 library(tidyr)

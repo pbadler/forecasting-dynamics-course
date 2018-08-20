@@ -4,17 +4,12 @@ layout: nil
 
 ### What is forecastable?
 
-* In what ways is uncertainty important for forecasting?
 * What does "inherent uncertainty" mean and how might it limit the
   forecastability of ecological systems?
 * What are "slow variables" and what promise do they hold for ecological
   forecasting?
 * What are some of the problems if a forecast doesn't handle uncertainty
   properly?
-
-### Data from experiments and monitoring
-
-* What are the kinds of data that may be important for forecasting?
 
 ### Forecasts in decision making
 

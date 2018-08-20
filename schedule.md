@@ -15,10 +15,11 @@ layout: page
 * August 30
     * Discussion: Why dynamics and forecasting? 
         * Reading: [Clark et al. 2001](https://doi.org/10.1126/science.293.5530.657)
+            * Discussion Leader: Peter
             * [Discussion questions]({{ site.baseurl }}/discussion/clark_etal_2001)
         * Reading: [Houlahan et al. 2017](https://onlinelibrary.wiley.com/doi/abs/10.1111/oik.03726)
             * Discussion questions: ??
-        * Discussion Leader: Peter
+            * Discussion Leader: ??
     * *Lab:* [Intro to R assignment]({{ site.baseurl }}/assignments/intro2R)
 <br><br>        
 
@@ -27,7 +28,7 @@ layout: page
     * Discussion: What IS forecasting?
         * Reading: [The quiet revolution of numerical weather prediction](https://doi.org/10.1038/nature14956)
             * Discussion leader: ??
-            * [Discussion questions]({{ site.baseurl }}/discussion/weather) 
+            * Discussion questions: ??
         * Reading: [2016 Forecast of Fire Season Severity](https://www.ess.uci.edu/~amazonfirerisk/ForecastWeb/SAMFSS2018.html)
             * Discussion leader: ??
             * Discussion questions: ??     
@@ -72,10 +73,10 @@ layout: page
     * Discussion: Ecological surprises    
         * Reading: [Black-swan events in animal populations](https://doi.org/10.1073/pnas.1611525114)
             * Discussion leader: ??
-            * [Discussion questions]({{ site.baseurl }}/discussion/blackswans)
+            * Discussion questions: ??
         * Reading: [Repeated regime shifts in a desert rodent community](https://doi.org/10.1101/163931)
             * Discussion leader: ??
-            * [Discussion questions]({{ site.baseurl }}/discussion/regimeshifts)
+            * Discussion questions: ??
 <br><br>
 
 * September 25
@@ -93,7 +94,7 @@ layout: page
 * October 2
     * Discussion: Data-driven vs. mechanistic models
         * Reading: [Renwick et al. 2018](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.13900)  
-            * Discussion leader: Peter
+            * Discussion leader: Peter?
             * Discussion questions: ??
 <br><br>
 
@@ -102,7 +103,7 @@ layout: page
     * Discussion: The importance of uncertainty
         * Reading: Dietze Chapter 2
             * Discussion leader: Peter ??
-            * [Discussion questions]({{ site.baseurl }}/discussion/dietz-ch2-questions)
+            * Discussion questions??
     * *Lab:* Evaluating forecasts assignment
 <br><br>
 
@@ -118,7 +119,7 @@ layout: page
       * Reading:
 [The fivethirtyeight.com Predictive Model of the 2008 Presidential Election](https://www.causeweb.org/cause/archive/stats/STATS_50.pdf)
         * Discussion leader: ??
-        * [Discussion questions]({{ site.baseurl }}/discussion/elections)
+        * Discussion questions: ??
 <br><br>
 
 * October 16
@@ -126,7 +127,7 @@ layout: page
     * Discussion: Changes in phenology
         * Reading [Shifting plant phenology in response to global change](https://doi.org/10.1016/j.tree.2007.04.003)
           * Discussion leader: ??
-          * [Discussion questions]({{ site.baseurl }}/discussion/phenology)
+          * Discussion questions: ??
 <br><br> 
 
 * October 18
@@ -169,7 +170,7 @@ layout: page
      * Discussion: Biodiversity--community responses to disturbance
         * Reading: [Species-level and community-level responses to disturbance: a cross-community analysis](https://doi.org/10.1890/13-2250.1)
           * Discussion leader: ??
-          * [Discussion questions]({{ site.baseurl }}/discussion/supp)
+          * Discussion questions: ??
 <br><br>  
 
 * November 13
@@ -184,7 +185,7 @@ layout: page
     * Discussion: Scenario based foreasting
         * Reading: [Scenario Planning: a Tool for Conservation in an Uncertain World](https://doi.org/10.1046/j.1523-1739.2003.01491.x)
           * Discussion leader: ??
-	        * [Discussion questions]({{ site.baseurl }}/discussion/scenarios)
+	        * Discussion questions: ??
 <br><br> 
 
 * November 22
