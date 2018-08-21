@@ -2,7 +2,7 @@
 title: "Time series decomposition and autocorrelation analyses"
 output:
   html_document: default
-layout: nil
+layout: post
 ---
 
 The purpose of this exercise is to practice loading a time series then decomposing 
