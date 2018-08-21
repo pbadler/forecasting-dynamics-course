@@ -14,13 +14,14 @@ went over in class:
 The first step is to download the data. We will work with climate data
 from Tuscon, AZ (I downloaded these data from a gridded climate product called
 PRISM: http://www.prism.oregonstate.edu/explorer/). The .csv files is here:
-LINK
-Save it to your local drive, then 1) read it into R using `read.csv()` and 2) 
+https://github.com/pbadler/forecasting-dynamics-course/blob/master/data/tuscon_prism_monthly.csv
+Save it to your local drive (click on the "Raw" button then right-click and
+"Save as"), then 1) read it into R using `read.csv()` and 2) 
 convert the `tmin_C` column (minimum temperature) to a time series object. 
+Now you are ready to answer the questions below.
 
-Now you are ready to answer the questions below. You should hand in 
-two things: an R script containing all the code you wrote,
-and a pdf/docx/odt file with answers to the following questions:
+*Each group should submit two files on Canvas: an R script containing all the code 
+you wrote, and a pdf/docx/odt file with answers to the following questions.*
 
 1) Decompose the time series using the `decompose()` function. Is there any clear
 trend in the minimum temperature time series? What does the seasonal signal look

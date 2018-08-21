@@ -50,18 +50,19 @@ layout: page
 <br><br>
 
 * September 11
-    * *Lab:* Time series decomposition and autocorrelation assignment
+    * *Lab:* [Time series decomposition and autocorrelation assignment]({{ site.baseurl }}/assignments/ts_decom_autocorr)
 <br><br>
 
 * September 13
-    * DUE: Autocorrelation assignment
     * Discussion: Understanding vs. prediction
         * Reading: [Breiman 2001](https://projecteuclid.org/euclid.ss/1009213726)
           * Discussion leader: ??
           * Discussion questions: ??
+    * *Lab:* Time for group work on assignment
 <br><br>
 
 * September 18
+    * DUE: [Time series decomposition and autocorrelation assignment]({{ site.baseurl }}/assignments/ts_decom_autocorr)
     * Discussion: Understanding vs. prediction and model selection
         * Reading: Tredennick et al. in prep (link on Canvas?)
           * Discussion leader: ??
