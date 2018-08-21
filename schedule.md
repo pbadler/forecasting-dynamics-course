@@ -54,20 +54,16 @@ layout: page
 <br><br>
 
 * September 13
-    * Discussion: Understanding vs. prediction
-        * Reading: [Breiman 2001](https://projecteuclid.org/euclid.ss/1009213726)
-          * Discussion leader: ??
-          * Discussion questions: ??
-    * *Lab:* Time for group work on assignment
+    * Discussion: Introduction to forecasting
+        * Reading: [Forecasting Principles & Process Chapter 1](https://www.otexts.org/fpp/1)
+            * Discussion leader: Peter
+            * [Discussion questions]({{ site.baseurl }}/discussion/fpp_1_questions) 
+    * *Lab:* Introduction to time series modeling
 <br><br>
 
 * September 18
     * DUE: [Time series decomposition and autocorrelation assignment]({{ site.baseurl }}/assignments/ts_decomp_autocorr)
-    * Discussion: Understanding vs. prediction and model selection
-        * Reading: Tredennick et al. in prep (link on Canvas?)
-          * Discussion leader: ??
-          * Discussion questions: ??
-    * *Lab:* Model selection vignettes [Butterfly vignettes](https://github.com/atredennick/modselr)
+    * *Lab:* Introduction to forecasting assignment
 <br><br>
 
 * September 20
@@ -81,15 +77,19 @@ layout: page
 <br><br>
 
 * September 25
-    * Discussion: Introduction to forecasting
-        * Reading: [Forecasting Principles & Process Chapter 1](https://www.otexts.org/fpp/1)
-            * Discussion leader: Peter
-            * [Discussion questions]({{ site.baseurl }}/discussion/fpp_1_questions) 
-    * *Lab:* Introduction to time series modeling
+    * DUE: Intro to forecasting assignment
+    * Discussion: Understanding vs. prediction
+        * Reading: [Breiman 2001](https://projecteuclid.org/euclid.ss/1009213726)
+          * Discussion leader: ??
+          * Discussion questions: ??
+    * Discussion: Understanding vs. prediction and model selection
+        * Reading: Tredennick et al. in prep (link on Canvas?)
+          * Discussion leader: ??
+          * Discussion questions: ??
 <br><br>
 
 * September 27
-    * *Lab:* Introduction to forecasting assignment
+    * *Lab:* Model selection vignettes [Butterfly vignettes](https://github.com/atredennick/modselr)
 <br><br>
 
 * October 2
@@ -100,7 +100,6 @@ layout: page
 <br><br>
 
 * October 4
-    * Due: Introduction to forecasting assignment
     * Discussion: The importance of uncertainty
         * Reading: Dietze Chapter 2
             * Discussion leader: Peter ??

@@ -5,16 +5,17 @@ output:
 layout: post
 ---
 
-The purpose of this exercise is to practice loading a time series then decomposing 
+The purpose of this exercise is to practice loading a time series, then decomposing
 it and testing for temporal autocorrelation. You can adapt the code that we
 went over in class:
+
 [Time series decomposition code](https://github.com/pbadler/forecasting-dynamics-course/blob/master/lectures/decomp_tutorial.R)
 
 [Autocorrelation code](https://github.com/pbadler/forecasting-dynamics-course/blob/master/lectures/autocorrelation.R)
 
 The first step is to download the data. We will work with climate data
-from Tuscon, AZ (I downloaded these data from a gridded climate product called
-[PRISM](http://www.prism.oregonstate.edu/explorer/)). [The .csv file is here]
+from Tuscon, AZ, not too far from Portal. The data come from a gridded climate product called
+[PRISM](http://www.prism.oregonstate.edu/explorer/)). You can get the .csv file [here]
 (https://github.com/pbadler/forecasting-dynamics-course/blob/master/data/tuscon_prism_monthly.csv).
 Save it to your local drive (click on the "Raw" button then right-click and
 "Save as"), then 1) read it into R using `read.csv()` and 2) 
