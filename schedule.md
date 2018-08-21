@@ -50,7 +50,7 @@ layout: page
 <br><br>
 
 * September 11
-    * *Lab:* [Time series decomposition and autocorrelation assignment]({{ site.baseurl }}/assignments/ts_decom_autocorr)
+    * *Lab:* [Time series decomposition and autocorrelation assignment]({{ site.baseurl }}/assignments/ts_decomp_autocorr)
 <br><br>
 
 * September 13
@@ -62,7 +62,7 @@ layout: page
 <br><br>
 
 * September 18
-    * DUE: [Time series decomposition and autocorrelation assignment]({{ site.baseurl }}/assignments/ts_decom_autocorr)
+    * DUE: [Time series decomposition and autocorrelation assignment]({{ site.baseurl }}/assignments/ts_decomp_autocorr)
     * Discussion: Understanding vs. prediction and model selection
         * Reading: Tredennick et al. in prep (link on Canvas?)
           * Discussion leader: ??
