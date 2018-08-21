@@ -71,4 +71,4 @@ The detailed course schedule is [here](https://pbadler.github.io/forecasting-dyn
 
 **Disclaimer:** This schedule represents my current plans and
 objectives. As we go through the semester, you should expect these
-plans to change. I will clearly communicate those changes.
+plans to change. I will do my best to clearly communicate those changes.

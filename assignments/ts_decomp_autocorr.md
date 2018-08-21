@@ -1,5 +1,5 @@
 ---
-title: "Time series decomposition and autocorrelation analyses"
+title: "Time series decomposition and autocorrelation assignment"
 output:
   html_document: default
 layout: post
@@ -15,8 +15,7 @@ went over in class:
 
 The first step is to download the data. We will work with climate data
 from Tuscon, AZ, not too far from Portal. The data come from a gridded climate product called
-[PRISM](http://www.prism.oregonstate.edu/explorer/)). You can get the .csv file [here]
-(https://github.com/pbadler/forecasting-dynamics-course/blob/master/data/tuscon_prism_monthly.csv).
+[PRISM](http://www.prism.oregonstate.edu/explorer/)). You can get the .csv file [here](https://github.com/pbadler/forecasting-dynamics-course/blob/master/data/tuscon_prism_monthly.csv).
 Save it to your local drive (click on the "Raw" button then right-click and
 "Save as"), then 1) read it into R using `read.csv()` and 2) 
 convert the `tmin_C` column (minimum temperature) to a time series object. 
