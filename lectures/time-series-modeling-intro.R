@@ -52,7 +52,7 @@ lines(fitted(seasonal_arima_model), col = 'red')
 acf(resid(seasonal_arima_model))
 
 # Automating fits
-# Fit many possible values of seaonsla, AR, differencing, and MA, and pick the best
+# Fit many possible values of seaon lags, AR, differencing, and MA, and pick the best
 # Unit root tests, minimization of the AICc and MLE
 
 # START WITH SEASONAL = FALSE, NOTE 1 AND 2 YEAR AUTOCORRELATION, REMOVE

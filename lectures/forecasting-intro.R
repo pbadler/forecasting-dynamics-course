@@ -85,7 +85,7 @@ plot(avg_forecast)
 # How do we tell? We'll come back to this when we learn how to evaluate forecasts
 
 # Forecasting with more complex models
-# `forecast()` function
+# `forecast()` function in package forecast
 # Non-seasonal ARIMA
 # y_t = c + b1 * y_t-1 + b2 * y_t-2 + e_t
 # Actually y_t = (1 - b1 - b2)*c + b1 * y_t-1 + b2 * y_t-2 + e_t due to non-zero mean
