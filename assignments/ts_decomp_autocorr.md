@@ -11,20 +11,29 @@ went over in class:
 [Time series decomposition code](https://github.com/pbadler/forecasting-dynamics-course/blob/master/lectures/decomp_tutorial.R)
 [Autocorrelation code](https://github.com/pbadler/forecasting-dynamics-course/blob/master/lectures/autocorrelation.R)
 
-The first step is to download the data...
+The first step is to download the data. We will work with climate data
+from Tuscon, AZ (I downloaded these data from a gridded climate product called
+PRISM: http://www.prism.oregonstate.edu/explorer/). The .csv files is here:
+LINK
+Save it to your local drive, then 1) read it into R using `read.csv()` and 2) 
+convert the `tmin_C` column (minimum temperature) to a time series object. 
 
-Convert it to a time series object....
+Now you are ready to answer the questions below. You should hand in 
+two things: an R script containing all the code you wrote,
+and a pdf/docx/odt file with answers to the following questions:
 
-You should hand in 1) an R script containing all the code you wrote to do your 
-analysis, and 2) a pdf/docx/odt file answering the following questions:
+1) Decompose the time series using the `decompose()` function. Is there any clear
+trend in the minimum temperature time series? What does the seasonal signal look
+like? Does it show a bimodal precipitation pattern? Would you get the same answer
+just by calculating the monthly means? Answer with a figure(s) and a few 
+sentences of explanation. (Are you curious if the same trend shows up for 
+tmax? Let me know if you look into it.)
 
-1) Is there a seasonal signal in the time series? Answer with a figure
-and an explanation of that figure.
+2) Create lag plots for the tmin data. Can you explain the circular patterns?
+(I haven't figured it out yet).
 
-2) Is there a long-term trend in the time series? Answer with a figure
-and an explanation of that figure.
+3) Is there autocorrelation? At what lags (in months)? Is there partial autocorrelation? At what lags? Include a figure(s) with
+an explanation.
 
-3) Is there autocorrelation? At what lags (in months)?
 
-4) Is there partial autocorrelation? At what lags?
 

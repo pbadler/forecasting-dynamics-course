@@ -102,7 +102,7 @@ acf(rats.ts)
 acf(NDVI.ts)
 pacf(NDVI.ts) # note pacf starts at lag1 not 0 so this can confuse people
 
-# FOrecast package has a nice feature that let's you look at the time series, the acf, and pacf at the same time
+# Forecast package has a nice feature that let's you look at the time series, the acf, and pacf at the same time
 tsdisplay(NDVI.ts)
 
 # Let students do this for rodents and rain

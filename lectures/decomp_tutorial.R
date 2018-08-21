@@ -111,6 +111,12 @@ fit_mult = decompose(NDVI.ts, type = 'multiplicative')
 plot(fit_mult)
 str(fit_mult)
 
+# It's hard to see the seasonal pattern, so let's zoom in.
+# by subsetting the seasonal fits:
+plot(fit_add$seasonal[1:12],type="o")
+
+
+
 # In our case slight differences in our seasonal and irregular signals with + vs X
 # both of them are picking up a big summer peak in greeness and a smaller winter peak
 
@@ -121,6 +127,11 @@ str(fit_mult)
 # an effect of trend magnitude in the multiplicative model.
 
 # Is also sensitive to outliers and you lose info at the beginning and end of the the series
+
+# Would we get the same answer just by calculating monthly means?
+# Use tapply() and cycle():
+monthly_means <- tapply(NDVI.ts, cycle(NDVI.ts), FUN=mean)
+plot(monthly_means,type="o")
 
 # At the other end of the spectrum is STL decomposition
 # Advantages: Seasonal component can change through time
@@ -147,26 +158,26 @@ str(fit_mult)
 # larger than the season window - odd orders
 # (1.5* number of observations in a seasonal cycle)/(1-1.5*seasonal smooth order^-1)
 # for monthly data, the number of observations in a seasonal cycle is 12
+# 
+# library(stlplus)
+# season_window = 7
+# min_twindow = as.integer(1.5*12/(1-1.5*season_window^-1))
 
-library(stlplus)
-season_window = 7
-min_twindow = as.integer(1.5*12/(1-1.5*season_window^-1))
-
-# wiggles are bad and means that the s.window is not large enough
-s_7 = stlplus(NDVI.ts, s.window = season_window, t.window = min_twindow)
-plot_seasonal(s_7)
-
-season_window = 13
-min_twindow = (1.5*12)/(1-1.5*season_window^-1)
-s_13 = stlplus(NDVI.ts, s.window = season_window, t.window = 21)
-plot_seasonal(s_13)
-
-season_window = 25
-min_twindow = (1.5*12)/(1-1.5*season_window^-1)
-s_25 = stlplus(NDVI.ts, s.window = season_window, t.window = 21)
-plot_seasonal(s_25)
-
-plot(s_25)
-plot_trend(s_25)
+# # wiggles are bad and means that the s.window is not large enough
+# s_7 = stlplus(NDVI.ts, s.window = season_window, t.window = min_twindow)
+# plot_seasonal(s_7)
+# 
+# season_window = 13
+# min_twindow = (1.5*12)/(1-1.5*season_window^-1)
+# s_13 = stlplus(NDVI.ts, s.window = season_window, t.window = 21)
+# plot_seasonal(s_13)
+# 
+# season_window = 25
+# min_twindow = (1.5*12)/(1-1.5*season_window^-1)
+# s_25 = stlplus(NDVI.ts, s.window = season_window, t.window = 21)
+# plot_seasonal(s_25)
+# 
+# plot(s_25)
+# plot_trend(s_25)
 
 
