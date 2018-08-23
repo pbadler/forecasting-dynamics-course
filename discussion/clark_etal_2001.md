@@ -1,8 +1,11 @@
 ---
-layout: nil
+title: "FPP Ch. 1 discussion questions"
+output:
+  html_document: default
+layout: post
 ---
 
-### What is forecastable?
+#### What is forecastable?
 
 * What does "inherent uncertainty" mean and how might it limit the
   forecastability of ecological systems?
@@ -11,14 +14,14 @@ layout: nil
 * What are some of the problems if a forecast doesn't handle uncertainty
   properly?
 
-### Forecasts in decision making
+#### Forecasts in decision making
 
 * What does the zebra mussel example tell us about forecasts and how they may or
   may not influence policy?
 * What is "bet-hedging" and why might it be important for ecological forecasts?
 * What are "scenarios" and why might they be useful?
 
-### Next steps
+#### Next steps
 
 * What is your impression of how the "next steps" discussed here have been
   implemented in the last 15 years?
