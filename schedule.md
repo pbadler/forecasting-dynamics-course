@@ -18,8 +18,8 @@ layout: page
             * Discussion Leader: Peter
             * [Discussion questions]({{ site.baseurl }}/discussion/clark_etal_2001)
         * Reading: [Houlahan et al. 2017](https://onlinelibrary.wiley.com/doi/abs/10.1111/oik.03726)
-            * Discussion questions: ??
-            * Discussion Leader: ??
+            * Discussion Leader: Peter
+            * [Discussion questions]({{ site.baseurl }}/discussion/Houlahan_questions)
     * *Lab:* [Intro to R assignment]({{ site.baseurl }}/assignments/intro2R)
 <br><br>        
 
@@ -97,7 +97,7 @@ layout: page
 * October 2
     * Discussion: Data-driven vs. mechanistic models
         * Reading: [Renwick et al. 2018](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.13900)  
-            * Discussion leader: Peter?
+            * Discussion leader: Peter
             * Discussion questions: ??
 <br><br>
 
