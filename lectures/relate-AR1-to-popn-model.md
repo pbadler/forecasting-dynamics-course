@@ -31,7 +31,7 @@ paste the code block into R).
 ar1 <- function(time_steps,initial_n,a,b,sigma){
   N <- numeric(time_steps)
   N[1] = initial_n
-  for(i in 2:tot_time){
+  for(i in 2:time_steps){
     N[i] = a + b*N[i-1] +rnorm(1,0,sigma)
   }
   return(N)

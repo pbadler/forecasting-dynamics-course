@@ -132,7 +132,7 @@ $(document).ready(function () {
 ar1 &lt;- function(time_steps,initial_n,a,b,sigma){
   N &lt;- numeric(time_steps)
   N[1] = initial_n
-  for(i in 2:tot_time){
+  for(i in 2:time_steps){
     N[i] = a + b*N[i-1] +rnorm(1,0,sigma)
   }
   return(N)
