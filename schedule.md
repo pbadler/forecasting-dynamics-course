@@ -63,7 +63,9 @@ layout: page
 
 * September 18
     * DUE: [Time series decomposition and autocorrelation assignment]({{ site.baseurl }}/assignments/ts_decomp_autocorr)
-    * *Lab:* Introduction to forecasting assignment
+    * *Lab:* 
+        *[Time series and population models]({{ site.baseurl }}/lectures/relate-AR1-to-popn-model)
+        *Introduction to forecasting assignment
 <br><br>
 
 * September 20
