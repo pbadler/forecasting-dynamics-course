@@ -5,6 +5,8 @@ output:
 layout: post
 ---
 
+### Tutorials ###
+
 First, if you are completely new to R, download this tutorial and work through the exercises:
 (http://www.nceas.ucsb.edu/files/scicomp/Dloads/RProgramming/BestFirstRTutorial.pdf)
 
@@ -32,12 +34,18 @@ Now we will do the same exercise in R. First, open R, then go to File>New script
 
 6. Graph the results using `plot()`.
 
-Other online resources:
+When you are done, *submit your finished script on Canvas*. Please submit 
+it as a .R or .txt file (not Word or pdf).
+
+### Other online resources ###
+
 * A cheat-sheet of R functions I put together: (http://www.nceas.ucsb.edu/files/scicomp/Dloads/RCourse/PeterAdlerRCheatSheet.pdf)
 
 * A more in-depth tutorial: (http://www.nceas.ucsb.edu/files/scicomp/Dloads/RProgramming/RForBeginners.pdf)
 
 * The official R manuals are found under the Help menu of the user interface.
+
+### If you get stuck.... ###
 
 My script for logistic growth:
 
