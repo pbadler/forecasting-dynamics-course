@@ -1,5 +1,5 @@
 ---
-title: "Clark et al. discussion questions"
+title: "FPP Ch. 1 discussion questions"
 output:
   html_document: default
 layout: post
