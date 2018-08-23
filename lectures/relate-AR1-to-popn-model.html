@@ -124,7 +124,7 @@ $(document).ready(function () {
 
 <p>We’ve introduced autoregressive models in a purely statistical framework, but they can be interpreted as population models too. Take the first order autoregressive (AR1) model:</p>
 <p><span class="math inline">\(x_{t+1} = a + bx_t +\epsilon_t\)</span> .</p>
-<p>Let’s replace <span class="math inline">\(x\)</span> with <span class="math inline">\(N\)</span>, which we often use as the symbol for population save. In addition, let’s ignore the error term, set <span class="math inline">\(b=1\)</span>, and re-order the terms:</p>
+<p>Let’s replace <span class="math inline">\(x\)</span> with <span class="math inline">\(N\)</span>, which we often use as the symbol for population size. In addition, let’s ignore the error term, set <span class="math inline">\(b=1\)</span>, and re-order the terms:</p>
 <p><span class="math inline">\(N_{t+1} = N_t + a\)</span> .</p>
 <p>Now it looks more like a population model, but it’s an odd one, because it is <em>additive</em>: population size next year is population size this year plus some constant <span class="math inline">\(a\)</span>. In other words, the population will increase linearly with time; it will not display the exponential growth we typically expect for a biological system.</p>
 <p>Let’s prove this to ourselves with a short R script (cut and paste the code block into R).</p>
