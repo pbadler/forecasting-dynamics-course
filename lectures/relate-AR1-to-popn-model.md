@@ -12,7 +12,7 @@ autoregressive (AR1) model:
 $x_{t+1} = a + bx_t +\epsilon_t$ .
 
 Let's replace $x$ with $N$, which we often use as the symbol for
-population save. In addition, let's ignore the error term, set $b=1$, 
+population size. In addition, let's ignore the error term, set $b=1$, 
 and re-order the terms:
 
 $N_{t+1} = N_t + a$ .
