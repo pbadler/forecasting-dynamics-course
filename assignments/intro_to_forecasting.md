@@ -61,7 +61,8 @@ Rather than using observed data for rain and NDVI, generate forecasts for three
 consecutive years with just 10% of average rain or NDVI, then generate forecasts
 for three consecutive years with 200% of average rain or NDVI (show the figures). 
 How different are these forecasts? Given your answer to question 4, is this a 
-surprise?
+surprise? What do your results imply about the potential for this approach
+to help anticipate the effects of decadal-scale climate change on Portal rodents?
 
 6. *Optional bonus question* If you use function `auto.arima()` to fit these models,
 would your answer to questions 1-5 change? (Remember to set `seasonal=FALSE`.)
