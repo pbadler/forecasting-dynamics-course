@@ -65,7 +65,7 @@ layout: page
     * DUE: [Time series decomposition and autocorrelation assignment]({{ site.baseurl }}/assignments/ts_decomp_autocorr)
     * *Lab:* 
         * [Time series and population models]({{ site.baseurl }}/lectures/relate-AR1-to-popn-model)
-        * Introduction to forecasting assignment
+        * [Introduction to forecasting assignment]({{ site.baseurl }}/lectures/intro_to_forecasting)
 <br><br>
 
 * September 20
@@ -79,7 +79,7 @@ layout: page
 <br><br>
 
 * September 25
-    * DUE: Intro to forecasting assignment
+    * DUE: [Introduction to forecasting assignment]({{ site.baseurl }}/lectures/intro_to_forecasting)
     * Discussion: Understanding vs. prediction
         * Reading: [Breiman 2001](https://projecteuclid.org/euclid.ss/1009213726)
           * Discussion leader: ??
