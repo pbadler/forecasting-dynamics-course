@@ -176,7 +176,7 @@ layout: page
 <br><br>  
 
 * November 13
-    * *Lab:* Let the forecasting tournament begin!
+    * *Lab:* [Forecasting tournament assignment]({{ site.baseurl }}/assignments/tournament) 
 <br><br>  
 
 * November 15
