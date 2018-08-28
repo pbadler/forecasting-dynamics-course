@@ -35,7 +35,7 @@ This course will be a mixture of discussion of primary literature and hands-on e
 1)  The free online text book [Forecasting: Principles and Practice](https://www.otexts.org/fpp) 
     will be used for some class activities, but is not required
 
-2) Also recommended is Mike Dietze's textbook [Ecological Forecasting](https://press.princeton.edu/titles/11048.html). 
+2) Also recommended is Mike Dietze's excellent textbook [Ecological Forecasting](https://press.princeton.edu/titles/11048.html). 
 
 2)  Almost all reading materials will be made available through the [course website](https://pbadler.github.io/forecasting-dynamics-course/). I will occasionally post a 
 less public document (e.g. draft manuscripts) on the course [Canvas page](https://usu.instructure.com/). 

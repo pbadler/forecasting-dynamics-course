@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Welcome to the course website for Ecological Dynamics and Forecasting.
+Welcome to the course website for Ecological Dynamics and Forecasting!
 
 Important links:
 
