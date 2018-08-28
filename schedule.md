@@ -203,7 +203,7 @@ layout: page
 <br><br> 
 
 * December 4
-    * DUE: Forecasting tournament assignment 
+    * DUE: [Forecasting tournament assignment]({{ site.baseurl }}/assignments/tournament) 
 <br><br> 
 
 * December 6
