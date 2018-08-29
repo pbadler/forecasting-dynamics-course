@@ -85,7 +85,7 @@ layout: page
           * Discussion leader: ??
           * Discussion questions: ??
     * Discussion: Understanding vs. prediction and model selection
-        * Reading: Tredennick et al. in prep (link on Canvas?)
+        * Reading: Tredennick et al. in prep (on Canvas)
           * Discussion leader: ??
           * Discussion questions: ??
 <br><br>
@@ -111,7 +111,7 @@ layout: page
 
 * October 9
     * Discussion: Economic forecasts
-        * Reading: Nate Silver chapter
+        * Reading: Nate Silver chapter 6 (Canvas)
             * Discussion leader: ??
             * Discussion questions: ??
 <br><br>
@@ -134,7 +134,7 @@ layout: page
 
 * October 18
     * Discussion: Primary production
-        * Reading [Luo]()
+        * Reading [Luo et al. 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12766)
           * Discussion leader: ??
           * Discussion questions: ??
     * *Lab:* Primary production ??
@@ -165,7 +165,7 @@ layout: page
  
 * November 6
     * Discussion: Biodiversity--species richness
-        * Reading: [Harris et al.]()
+        * Reading: [Harris et al.](https://peerj.com/articles/4278/)
 <br><br>  
  
 * November 8
