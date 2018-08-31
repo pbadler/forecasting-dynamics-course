@@ -27,11 +27,11 @@ layout: page
     * DUE: [Intro to R assignment]({{ site.baseurl }}/assignments/intro2R). Submit on Canvas.
     * Discussion: What IS forecasting?
         * Reading: [The quiet revolution of numerical weather prediction](https://doi.org/10.1038/nature14956)
-            * Discussion leader: ??
+            * Discussion leader: ?
             * Discussion questions: ??
         * Reading: [2016 Forecast of Fire Season Severity](https://www.ess.uci.edu/~amazonfirerisk/ForecastWeb/SAMFSS2018.html)
-            * Discussion leader: ??
-            * Discussion questions: ??     
+            * Discussion leader: Sofia
+            * Discussion questions: [Discussion questions]({{ site.baseurl }}/discussion/amazon_fire_questions)    
     * *Lab:* Preview next lab
 <br><br>
 
