@@ -1,5 +1,6 @@
 PRISM Time Series Data						
-Location:  Lat: 37.0958   Lon: -119.7292   Elev: 294m						
+Location:  Lat: 37   Lon: -119   Elev: 300 m
+						
 Climate variables: ppt,tmin,tmean,tmax,vpdmin,vpdmax						
 Spatial resolution: 4km						
 Period: 1895-01 - 2018-07						

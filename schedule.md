@@ -133,7 +133,7 @@ layout: page
 <br><br> 
 
 * October 18
-    * Discussion: Primary production
+    * Discussion: Carbon cycle
         * Reading [Luo et al. 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12766)
           * Discussion leader: ??
           * Discussion questions: ??
@@ -165,7 +165,7 @@ layout: page
  
 * November 6
     * Discussion: Biodiversity--species richness
-        * Reading: [Harris et al.](https://peerj.com/articles/4278/)
+        * Reading: [Harris et al. 2018](https://peerj.com/articles/4278/)
 <br><br>  
  
 * November 8
