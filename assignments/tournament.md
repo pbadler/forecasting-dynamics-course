@@ -33,7 +33,13 @@ values using RMSE? ASE?
 ### Background ###
 
 As we've discussed, mechanistic knowledge can improve forecasts. The forage
-data come from the Sierra Nevada foothills of California. This is an annual grassland,
+data come from the Sierra Nevada foothills of California. Here is the citation for the data, 
+which USDA NRCS and University of California Extension have generously made public for our use:
+
+Dennis Dudley, USDA NRCS Rangeland Specialist, Madera County; Neil McDougald, UCCE Livestock, 
+Range, and Natural Resources Advisor Emeritus, Madera County
+
+This is an annual grassland,
 so measuring aboveground annual production (forage production) is straightforward:
 biomass is clipped to ground level, dried, and weighed. This is usually done in June 
 at the end of the spring growing season. For more information about the factors
