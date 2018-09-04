@@ -38,7 +38,7 @@ layout: page
 * September 6
     * Discussion: What IS NOT forecasting?
         * Reading: [Thuiller et al. 2005](http://www.pnas.org/content/102/23/8245)
-          * Discussion leader: ??
+          * Discussion leader: Aidan
           * Discussion questions?
     * *Lab:* Working with time series data in R
         * Before class install R Packages: forecast, ggplot2, lubridate, dplyr, scales, gridExtra, ggthemes, reshape2, zoo
@@ -71,10 +71,10 @@ layout: page
 * September 20
     * Discussion: Ecological surprises    
         * Reading: [Black-swan events in animal populations](https://doi.org/10.1073/pnas.1611525114)
-            * Discussion leader: ??
+            * Discussion leader: Nick
             * Discussion questions: ??
         * Reading: [Repeated regime shifts in a desert rodent community](https://doi.org/10.1101/163931)
-            * Discussion leader: ??
+            * Discussion leader: Lauren
             * Discussion questions: ??
 <br><br>
 
@@ -120,7 +120,7 @@ layout: page
     * Discussion: Elections
       * Reading:
 [The fivethirtyeight.com Predictive Model of the 2008 Presidential Election](https://www.causeweb.org/cause/archive/stats/STATS_50.pdf)
-        * Discussion leader: ??
+        * Discussion leader: Binod
         * Discussion questions: ??
 <br><br>
 
@@ -128,30 +128,32 @@ layout: page
     * DUE: Evaluating forecasts assignment
     * Discussion: Changes in phenology
         * Reading [Shifting plant phenology in response to global change](https://doi.org/10.1016/j.tree.2007.04.003)
-          * Discussion leader: ??
+          * Discussion leader: Michael
           * Discussion questions: ??
 <br><br> 
 
 * October 18
     * Discussion: Carbon cycle
         * Reading [Luo et al. 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12766)
-          * Discussion leader: ??
+          * Discussion leader: Paige
           * Discussion questions: ??
     * *Lab:* Primary production ??
 <br><br>
 
 * October 23
     * Discussion: Population models--plants
+        * Discussion leader: Paige
  <br><br>
  
  * October 25
     * Discussion: Population models--animals
+        * Discussion leader: Brian
  <br><br>
  
 * October 30
     * Discussion: Short-term ecological forecasting [quantitative]
         * Reading: [State-space modeling to support management of brucellosis in the Yellowstone bison population](https://doi.org/10.1890/14-1413.1) 
-          * Discussion leader: ??
+          * Discussion leader: Kylie
           * Discussion questions: ??
     * *Lab:* State-space models
  <br><br>
@@ -159,13 +161,14 @@ layout: page
 * November 1
     * Discussion: Remotely-sensed population time-series
         * Reading: [Tredennick et al. 2016](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.1525)
-          * Discussion leader: ??
+          * Discussion leader: Alex
           * Discussion questions: ??
 <br><br>
  
 * November 6
     * Discussion: Biodiversity--species richness
         * Reading: [Harris et al. 2018](https://peerj.com/articles/4278/)
+            * Discussion leader: John
 <br><br>  
  
 * November 8
@@ -186,7 +189,7 @@ layout: page
 * November 20
     * Discussion: Scenario based foreasting
         * Reading: [Scenario Planning: a Tool for Conservation in an Uncertain World](https://doi.org/10.1046/j.1523-1739.2003.01491.x)
-          * Discussion leader: ??
+          * Discussion leader: Leandro
 	        * Discussion questions: ??
 <br><br> 
 
