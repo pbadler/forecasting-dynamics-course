@@ -39,7 +39,7 @@ layout: page
     * Discussion: What IS NOT forecasting?
         * Reading: [Thuiller et al. 2005](http://www.pnas.org/content/102/23/8245)
           * Discussion leader: Aidan
-          * [Discussion questions]({{ site.baseurl }}/discussion/Thiuller_questions) 
+          * [Discussion questions]({{ site.baseurl }}/discussion/Thuiller_questions) 
     * *Lab:* Working with time series data in R
         * Before class install R Packages: forecast, ggplot2, lubridate, dplyr, scales, gridExtra, ggthemes, reshape2, zoo
         * Reading: Look through the following [NEON Working with Time Series Data Tutorials](https://www.neonscience.org/tabular-time-series)
