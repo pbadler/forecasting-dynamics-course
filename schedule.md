@@ -28,10 +28,10 @@ layout: page
     * Discussion: What IS forecasting?
         * Reading: [The quiet revolution of numerical weather prediction](https://www.nature.com/articles/nature14956)
             * Discussion leader: Elizabeth
-            * Discussion questions: [Discussion questions]({{ site.baseurl }}/discussion/weather_questions) 
+            * [Discussion questions]({{ site.baseurl }}/discussion/weather_questions) 
         * Reading: [2016 Forecast of Fire Season Severity](https://www.ess.uci.edu/~amazonfirerisk/ForecastWeb/SAMFSS2018.html)
             * Discussion leader: Sofia
-            * Discussion questions: [Discussion questions]({{ site.baseurl }}/discussion/amazon_fire_questions)    
+            * [Discussion questions]({{ site.baseurl }}/discussion/amazon_fire_questions)    
     * *Lab:* Preview next lab
 <br><br>
 

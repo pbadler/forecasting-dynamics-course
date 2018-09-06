@@ -14,7 +14,7 @@ a competition! We are going to try to forecast forage production in the annual
 grasslands of California based on weather covariates. The idea is pretty simple: 
 
 1. Each group downloads:
-      + The forage production response data for years 1936-2013 (download from Canvas).
+      + The [forage production response data](https://github.com/pbadler/forecasting-dynamics-course/blob/master/data/sanjoaquin_forage_train_set.csv) for years 1936-2013.
       + [Monthly weather covariates](https://github.com/pbadler/forecasting-dynamics-course/blob/master/data/tournament_prism_monthly.csv) that span the training data set 
 and then continue for the 2014-2018 period.
 2. Fit whatever kind of model you want, using any method you want, with 
