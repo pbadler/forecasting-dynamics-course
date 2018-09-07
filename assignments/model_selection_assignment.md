@@ -54,7 +54,7 @@ bison = mutate(bison, loglagN = log(lagN))
 For the weather data, I wanted to set things up so I could aggregate variables
 by "climate year" (often refered to as "water year") rather than calendar year.
 Bison counts are completed by August each year; weather in September - December
-probably can't effect the population in the year of the count, but it might
+really shouldn't effect the population in the year of the count, but it might
 affect the population in the following calendar year. So I start my "climate
 year" in September (month 9):
 ```R
@@ -125,7 +125,6 @@ like this:
 ```R
 mbase <- lm(logN ~ loglagN, data=bison_wide )
 resids <- residuals(mbase)
-
 ```
 To use the climwin package, we actually want to use time-series-like versions
 of the bison and weather data (not the "climate year" variables or the version
@@ -152,7 +151,7 @@ bisonWin <- slidingwin(xvar = list(ppt = weather$ppt_in),
 And here is how I examined the results:
 ```R
 bisonWin$combos
-summary(bisonWin[[1]]$BestMode
+summary(bisonWin[[1]]$BestModel)
 ```
 You are on your own for **question 2**!
 
@@ -164,7 +163,7 @@ you are ready to fit, you should set up the penalty factors like this:
 ```R
 pen_facts <- c(0,rep(1, ncol(X)-1)) # penalize all covariates EXCEPT the first, loglagN
 ```
-After you run the glmnet.cv() function, ignore the rest of Tredennick's code
+After you run the `glmnet.cv()` function, ignore the rest of Tredennick's code
 and just look at the output and generate predictions like this:
 ```R
 # extract and look at the best coefficients
