@@ -91,7 +91,7 @@ layout: page
 <br><br>
 
 * September 27
-    * *Lab:* Model selection vignettes [Butterfly vignettes](https://github.com/atredennick/modselr)
+    * *Lab:* [Model selection assignment]({{ site.baseurl }}/assignments/model_selection_assignment)
 <br><br>
 
 * October 2
@@ -102,6 +102,7 @@ layout: page
 <br><br>
 
 * October 4
+    * DUE: [Model selection assignment]({{ site.baseurl }}/assignments/model_selection_assignment)
     * Discussion: The importance of uncertainty
         * Reading: Dietze Chapter 2
             * Discussion leader: Peter ??
