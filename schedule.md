@@ -59,8 +59,8 @@ layout: page
             * Discussion leader: Peter
             * [Discussion questions]({{ site.baseurl }}/discussion/fpp_1_questions) 
     * *Lab:* 
-        * Introduction to time series modeling [demo code]({{ site.baseurl }}/lectures/time-series-modeling-intro)
-        * Introduction to forecasting [demo code]({{ site.baseurl }}/lectures/forecasting-intro)
+        * Introduction to time series modeling [demo code]({{ site.baseurl }}/lectures/time-series-modeling-intro.R)
+        * Introduction to forecasting [demo code]({{ site.baseurl }}/lectures/forecasting-intro.R)
 <br><br>
 
 * September 18
