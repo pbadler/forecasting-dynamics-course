@@ -9,8 +9,8 @@ layout: page
 * August 28
     * Discussion: Introduction; Can we forecast in ecology?
         * Discussion Leader: Peter
-    * *Lab:* Set up `R`, [Intro to R assignment]({{ site.baseurl }}/assignments/intro2R) 
-<br><br>
+    * *Lab:* Set up `R`, [Intro to R assignment]({{ site.baseurl }}/assignments/intro2R)  
+<br>   
 
 * August 30
     * Discussion: Why dynamics and forecasting? 
@@ -20,8 +20,8 @@ layout: page
         * Reading: [Houlahan et al. 2017](https://onlinelibrary.wiley.com/doi/abs/10.1111/oik.03726)
             * Discussion Leader: Peter
             * [Discussion questions]({{ site.baseurl }}/discussion/Houlahan_questions)
-    * *Lab:* [Intro to R assignment]({{ site.baseurl }}/assignments/intro2R)
-<br><br>        
+    * *Lab:* [Intro to R assignment]({{ site.baseurl }}/assignments/intro2R)  
+<br>      
 
 * September 4
     * DUE: [Intro to R assignment]({{ site.baseurl }}/assignments/intro2R). Submit on Canvas.
@@ -32,8 +32,8 @@ layout: page
         * Reading: [2016 Forecast of Fire Season Severity](https://www.ess.uci.edu/~amazonfirerisk/ForecastWeb/SAMFSS2018.html)
             * Discussion leader: Sofia
             * [Discussion questions]({{ site.baseurl }}/discussion/amazon_fire_questions)    
-    * *Lab:* Preview next lab
-<br><br>
+    * *Lab:* Preview next lab  
+<br>
 
 * September 6
     * Discussion: What IS NOT forecasting?
@@ -60,13 +60,14 @@ layout: page
             * [Discussion questions]({{ site.baseurl }}/discussion/fpp_1_questions) 
     * *Lab:* 
         * Introduction to time series modeling [demo code]({{ site.baseurl }}/lectures/time-series-modeling-intro.R)
-        * Introduction to forecasting [demo code]({{ site.baseurl }}/lectures/forecasting-intro.R)
 <br><br>
 
 * September 18
     * DUE: [Time series decomposition and autocorrelation assignment]({{ site.baseurl }}/assignments/ts_decomp_autocorr)
     * *Lab:* 
         * [Time series and population models]({{ site.baseurl }}/lectures/relate-AR1-to-popn-model)
+        * Introduction to forecasting [demo code]({{ site.baseurl }}/lectures/forecasting-intro.R)
+<br><br>
         * [Introduction to forecasting assignment]({{ site.baseurl }}/assignments/intro_to_forecasting)
 <br><br>
 
@@ -81,7 +82,6 @@ layout: page
 <br><br>
 
 * September 25
-    * DUE: [Introduction to forecasting assignment]({{ site.baseurl }}/assignments/intro_to_forecasting)
     * Discussion: Understanding vs. prediction
         * Reading: [Breiman 2001](https://projecteuclid.org/euclid.ss/1009213726)
           * Discussion leader: ??
@@ -93,6 +93,7 @@ layout: page
 <br><br>
 
 * September 27
+    * DUE: [Introduction to forecasting assignment]({{ site.baseurl }}/assignments/intro_to_forecasting)
     * *Lab:* [Model selection assignment]({{ site.baseurl }}/assignments/model_selection_assignment)
 <br><br>
 
