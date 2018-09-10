@@ -26,23 +26,17 @@ layout: post
 
 #### Determining what to forecast
 
-* Important to find or collect right data
-    * Do we have most of the data we need?
-  	* What are examples of additional data we should collect?
-	    * Large scale or small scale collection?
-            * Experiments or observations?
-* Cross-sectional vs. time-series
+* What is the difference between the cross-sectional and time-series approaches?
     * What is a good example of cross-sectional forecasting in ecology?
     * What is a good example of time-series forecasting?
-* Why might we use a time-series only model for forecasting?
+* Why might we forecast using a time-series only model that ignore explanatory variables?
 
 #### Case studies
 
 * Do any of the case studies remind you of ecological patterns or questions?
-* How complicated are the case studies compared to ecological problems?
+    * How complicated are the case studies compared to ecological problems?
 
 #### Basic steps
 
-* Let's talk through an example for an ecological question
-* How well do you think our field does at each of these steps?
-* What can we do to improve on our current approaches?
+* How well do you think our field does at each of these steps (give examples)?
+
