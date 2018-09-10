@@ -64,15 +64,6 @@ lines(fitted(arima_model), col='red')
 acf(resid(arima_model))
 Box.test(resid(arima_model))
 
-# what happens next?
-model_forecast = forecast(arima_model)
-plot(model_forecast)
-
-# look farther ahead
-# what happens next?
-model_forecast = forecast(arima_model, h = 48)
-plot(model_forecast)
-
 # Incorporating external co-variates
 # y_t = c + b1 * y_t-1 + b2 * x_t ... + e_t
 

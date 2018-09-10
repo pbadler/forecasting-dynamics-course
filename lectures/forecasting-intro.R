@@ -10,6 +10,7 @@ library(ggplot2)
 data = read.csv("./../data/portal_timeseries.csv", stringsAsFactors = FALSE)
 head(data)
 NDVI_ts = ts(data$NDVI, start = c(1992, 3), end = c(2014, 11), frequency = 12)
+rain_ts = ts(data$rain, start = c(1992, 3), end = c(2014, 11), frequency = 12)
 
 # Steps in forecasting
 # 1. Problem definition
@@ -19,10 +20,6 @@ NDVI_ts = ts(data$NDVI, start = c(1992, 3), end = c(2014, 11), frequency = 12)
 # 5. Make forecasts
 # 6. Evaluate forecasts
 
-# Reminder of data structure
-
-plot(NDVI_ts)
-acf(NDVI_ts)
 
 # Last time we made some models, the simplest was just the average
 # Average model: y_t = c + e_t, where e_t ~ N(0, sigma)
@@ -38,7 +35,6 @@ avg_forecast = meanf(NDVI_ts)
 avg_forecast
 
 # Look at the forecast object
-
 str(avg_forecast)
 
 # Can see the
@@ -48,24 +44,19 @@ str(avg_forecast)
 # * Mean values for the forecast
 
 # The expected value, or point forecast, is in $mean
-
 avg_forecast$mean
 
 # Visualize
-
 plot(NDVI_ts)
 lines(avg_forecast$mean, col = 'red')
 
 # Better to use built-in plotting functions
-
 plot(avg_forecast)
 
 # or
-
 autoplot(avg_forecast)
 
 # Change the number of time-steps in the forecast using h
-
 avg_forecast = meanf(NDVI_ts, h = 50)
 plot(avg_forecast)
 
