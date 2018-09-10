@@ -67,7 +67,6 @@ layout: page
     * *Lab:* 
         * [Time series and population models]({{ site.baseurl }}/lectures/relate-AR1-to-popn-model)
         * Introduction to forecasting [demo code]({{ site.baseurl }}/lectures/forecasting-intro.R)
-<br><br>
         * [Introduction to forecasting assignment]({{ site.baseurl }}/assignments/intro_to_forecasting)
 <br><br>
 
