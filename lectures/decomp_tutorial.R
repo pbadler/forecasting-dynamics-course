@@ -5,21 +5,20 @@ library(fpp)
 
 setwd("C:/Repos/forecasting-dynamics-course/lectures")
 
-## Inherent scales within a time series
-#  Talk about scales within the data
-#  often our data has some frequency of collection within a year
-#  interested in either focusing on that scale, or removing the effects of other scales
-#  For example - seasonally adjusted housing sales or unemployment
+## Inherent scales within a time series:
+#  Often our data has some frequency of collection within a year (e.g. daily, monthly).
+#  We might be interested in either focusing on that scale, or removing the effects of it.
+#  For example - seasonally adjusted housing sales or unemployment.
 
 
-## What is time series decomposition
-# A time series approach for trying to pull out the signals at different scales.
+## Time series decomposition:
+# a time series approach for trying to pull out the signals at different scales.
 # Breaks down a time series into the trend, seasonal, and "irregular" fluctuations
-# Use example of atmospheric CO2
+# Use example of atmospheric CO2.
 
 # To extract these components, there are generally 3 basic steps.
-# 1) we fit something to the observed data to extract the trend.
-# 2) we fit a seasona model to the remaining data to pull out the season
+# 1) we fit something to the observed data to extract the long-term trend
+# 2) we fit a seasonal model to the remaining data to pull out the seasonal signal
 # 3) whatever is left over are the irregular fluctuations (residuals)
 
 
@@ -31,18 +30,14 @@ setwd("C:/Repos/forecasting-dynamics-course/lectures")
 
 # Some packages will require you to put your data into a time series object specific to that
 # package. For today, we will use the standard ts object in the base package. It's limitation is
-# is that it can only take regularly spaced data (i.e. monthly, daily, quarterly, annual). There are
-# other methods that can take irregular data and import that into a time series object. Packazges
+# that it can only take regularly spaced data (i.e. monthly, daily, quarterly, annual). There are
+# other methods that can take irregular data and import that into a time series object. Packages
 # that can handle irregular data include zoo and xts.
 
-## Decomposing a time series
-
-# Working with data as a ts object. 
-
-# example: ts
+## Example: ts
 
 # Exploring  patterns with decomposition using NDVI
-# need to make sure yur data is already in chronological order
+# need to make sure your data is already in chronological order
 
 NDVI = read.csv('./../data/portal_timeseries.csv', stringsAsFactors = FALSE)
 head(NDVI)
@@ -74,6 +69,12 @@ MA_m13 = ma(NDVI.ts, order=13, centre = TRUE)
 plot(NDVI.ts)
 lines(MA_m13, col="blue", lwd = 3)
 
+# try a longer window
+MA_m49 = ma(NDVI.ts, order=49, centre = TRUE)
+
+plot(NDVI.ts)
+lines(MA_m49, col="blue", lwd = 3)
+
 # # even length window
 # MA_m12 = ma(NDVI.ts, order=12, centre = FALSE)
 # MA_2x12 = ma(MA_m12, order=2,centre=FALSE)
@@ -82,7 +83,7 @@ lines(MA_m13, col="blue", lwd = 3)
 
 # Classic Decomposition uses a Moving Average to obtain a trend, then detrend the observed data.
 
-# two basic ways to remove a seasonal signal - additive or multiplicative. 
+# Two basic ways to remove a seasonal signal - additive or multiplicative. 
 # Additive: Observed = Trend + Seasonal + Irregular (fluctuations in the time series stable with trend)
 # Multiplicative: Observed = Trend*Seasonal*Irregular (fluctuations in the time series increase with trend)
 # In our data, not much of a trend, no clear relationship between trend and seasonality
@@ -96,7 +97,7 @@ plot(Seasonal_residual_multi)
 # So, we've pulled out the trend. What does this plot represent? What's still left in here?
 # Seasonal signal and the "random" signal. The next step is to disentangle those two signals.
 
-# We walked through pullig out the trend signal because I wanted you to have a basic understanding
+# We walked through pulling out the trend signal because I wanted you to have a basic understanding
 # of what's going on with decomposition approaches. But we don't have to disentangle all
 # these signals by hand. There are packages that do this. 
 
@@ -113,9 +114,12 @@ str(fit_mult)
 
 # It's hard to see the seasonal pattern, so let's zoom in.
 # by subsetting the seasonal fits:
-plot(fit_add$seasonal[1:12],type="o")
+plot(fit_add$seasonal[11:23],type="o") # started at 11 b/c it is the first January
 
-
+# Would we get the same answer just by calculating monthly means?
+# Use tapply() and cycle():
+monthly_means <- tapply(NDVI.ts, cycle(NDVI.ts), FUN=mean)
+plot(monthly_means,type="o")
 
 # In our case slight differences in our seasonal and irregular signals with + vs X
 # both of them are picking up a big summer peak in greeness and a smaller winter peak
@@ -128,17 +132,12 @@ plot(fit_add$seasonal[1:12],type="o")
 
 # Is also sensitive to outliers and you lose info at the beginning and end of the the series
 
-# Would we get the same answer just by calculating monthly means?
-# Use tapply() and cycle():
-monthly_means <- tapply(NDVI.ts, cycle(NDVI.ts), FUN=mean)
-plot(monthly_means,type="o")
-
 # At the other end of the spectrum is STL decomposition
 # Advantages: Seasonal component can change through time
 # user can control the trend averaging
 # can control sensitivity to outliers. Less impact on trend and season, but irregular remains
 
-# # Drawbacks: no ability to handle calendar variation, only additive. Can make it give you
+# # Drawbacks: no ability to handle calendar variation, only additive. To make it give you
 # # a multiplicative requires logs and back transformations.
 # 
 # fit_stl = stl(NDVI.ts, s.window='periodic', robust=TRUE)

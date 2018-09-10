@@ -5,15 +5,15 @@ setwd("C:/Repos/forecasting-dynamics-course/lectures")
 library(forecast)
 library(astsa)
 
-# Last week we talked about the different time scales as one type of signal that
+# Last lecture we talked about the different time scales as one type of signal that
 # was embedded in a timeseries. This week we're going to talk about a different
 # issue with time scales. 
 
 # Let's start by thinking about an extreme case of a time series. Say I have a normal distribution
 # centered on zero and at each time step I randomly draw a value from the distribution
-# what does my time series look like? (highly variable, no trend). 
+# What does my time series look like? (highly variable, no trend). 
 
-# Is this how we would expect a normal biological time series to operate? (no. the value
+# Is this how we would expect a normal biological time series to operate? (No. the value
 # at t+1 probably has some dependence on the value at t)
 
 # So let's look at a random time series where the value at one time step has
@@ -37,7 +37,7 @@ plot(NDVI.ts, xlab = "Year", ylab="greenness", main="NDVI")
 # from white noise, we know that the NDVI data has seasonality in the signal, so
 # that's clearly one major difference, related to that is that the value at one
 # time step is not necessarily indpendent from previous time steps. We can
-# explore that dependence by looking at lag plots.How much does one time step 
+# explore that dependence by looking at lag plots. How much does one time step 
 # tell you about the next?
 
 # Lag plots are simply the correlation between values at time t and some time step in
@@ -109,7 +109,7 @@ tsdisplay(NDVI.ts)
 tsdisplay(rats.ts)
 tsdisplay(PPT.ts)
 
-# The rodents show a classic signal of an autoregressive model. WHat is an autoregressive model?
+# The rodents show a classic signal of an autoregressive model. What is an autoregressive model?
 # Something where the value at time t depends on the values at previous time steps. 
 
 # A classic autoregressive model is a random walk:
@@ -153,11 +153,12 @@ lag2.plot(NDVI.ts, rats.ts, 12)
 #   errors - sometimes referred to as covariance in the errors.
 
 
-# Stationarity: mathematically no moment of the distribution for the time series depends upon or changes predictably with time.
-#               Practically, constant mean, variance, and autocovariance does not depend on time
+# Stationarity: mathematically no moment of the distribution for the time series depends 
+# upon or changes predictably with time.
+# Practically, constant mean, variance, and autocovariance does not depend on time
 # Can check to see if your data is 
 
-adf.test(random)
+adf.test(whitenoise)
 adf.test(x, alternative = "stationary")
 adf.test(NDVI.ts)
 adf.test(PPT.ts)
@@ -166,6 +167,5 @@ adf.test(rats.ts)
 # if p value > 0.05, the time series is not stationary
 # if p value < 0.05, time series is stationary
 
-adf.test(NDVI.ts)
 
 
