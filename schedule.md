@@ -58,7 +58,7 @@ layout: page
         * Reading: [Forecasting Principles & Process Chapter 1](https://www.otexts.org/fpp/1)
             * Discussion leader: Peter
             * [Discussion questions]({{ site.baseurl }}/discussion/fpp_1_questions) 
-    * *Lab:* Introduction to time series modeling
+    * *Lab:* Introduction to time series modeling [demo code]({{ site.baseurl }}/lectures/time-series-modeling-intro))
 <br><br>
 
 * September 18

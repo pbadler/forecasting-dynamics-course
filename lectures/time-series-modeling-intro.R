@@ -1,3 +1,4 @@
+
 rm(list=ls())
 setwd("C:/Repos/forecasting-dynamics-course/lectures")
 
@@ -65,6 +66,11 @@ Box.test(resid(arima_model))
 
 # what happens next?
 model_forecast = forecast(arima_model)
+plot(model_forecast)
+
+# look farther ahead
+# what happens next?
+model_forecast = forecast(arima_model, h = 48)
 plot(model_forecast)
 
 # Incorporating external co-variates
