@@ -52,6 +52,11 @@ plot(NDVI_ts)
 lines(fitted(seasonal_arima_model), col = 'red')
 acf(resid(seasonal_arima_model))
 
+# What are those three numbers?
+# 1: AR order
+# 2: Degree of differencing: handles strong one-step autocorrelations
+# 3: Moving average: autocorrelated errors
+
 # Automating fits
 # Fit many possible values of seaon lags, AR, differencing, and MA, and pick the best
 # Unit root tests, minimization of the AICc and MLE
@@ -72,7 +77,3 @@ plot(NDVI_ts)
 lines(fitted(rain_arima_model), col = 'blue')
 lines(fitted(arima_model), col = 'red')
 
-# What are those other two numbers
-
-# Differencing: handles strong one-step autocorrelations
-# Moving average: autocorrelated errors
