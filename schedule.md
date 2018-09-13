@@ -74,7 +74,7 @@ layout: page
     * Discussion: Ecological surprises    
         * Reading: [Black-swan events in animal populations](https://doi.org/10.1073/pnas.1611525114)
             * Discussion leader: Nick
-            * Discussion questions: ??
+            * Discussion questions: ({{ site.baseurl }}/discussion/black_swan_questions) 
         * Reading: [Repeated regime shifts in a desert rodent community](https://doi.org/10.1101/163931)
             * Discussion leader: Lauren
             * Discussion questions: ??
