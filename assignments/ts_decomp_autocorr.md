@@ -26,7 +26,7 @@ you wrote, and a pdf/docx/odt file with answers to the following questions.*
 
 1) Decompose the time series using the `decompose()` function. Is there any clear
 trend in the minimum temperature time series? What does the seasonal signal look
-like? Does it show a bimodal precipitation pattern? Would you get the same answer
+like? Would you get the same answer
 just by calculating the monthly means? Answer with a figure(s) and a few 
 sentences of explanation. (Are you curious if the same trend shows up for 
 tmax? Let me know if you look into it.)
@@ -34,8 +34,7 @@ tmax? Let me know if you look into it.)
 2) Create lag plots for the tmin data. Can you explain the circular patterns?
 (I haven't figured it out yet).
 
-3) Is there autocorrelation? At what lags (in months)? Is there partial autocorrelation? At what lags? Include a figure(s) with
-an explanation.
+3) Is there autocorrelation? At what lags (in months)? Is there partial autocorrelation? At what lags? Include a figure(s) with an explanation.
 
 
 
