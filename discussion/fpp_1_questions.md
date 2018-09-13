@@ -8,9 +8,9 @@ layout: post
 #### What can we forecast?
 
 * The reading suggests that three things influence our ability to forecast:
-  * how well the factors driving the response are understood
-	* how much data is available
-	* whether the forecast influences the thing being forecast
+    * how well the factors driving the response are understood
+    * how much data is available
+	  * whether the forecast influences the thing being forecast  
 *Why do each of these matter?*
 
 * Are there examples in ecology where a forecast could influence the thing being
@@ -30,11 +30,6 @@ layout: post
     * What is a good example of cross-sectional forecasting in ecology?
     * What is a good example of time-series forecasting?
 * Why might we forecast using a time-series only model that ignore explanatory variables?
-
-#### Case studies
-
-* Do any of the case studies remind you of ecological patterns or questions?
-    * How complicated are the case studies compared to ecological problems?
 
 #### Basic steps
 
