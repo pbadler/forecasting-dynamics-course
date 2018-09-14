@@ -75,9 +75,9 @@ layout: page
         * Reading: [Black-swan events in animal populations](https://doi.org/10.1073/pnas.1611525114)
             * Discussion leader: Nick
             * [Discussion questions]({{ site.baseurl }}/discussion/black_swan_questions) 
-        * Reading: [Repeated regime shifts in a desert rodent community](https://doi.org/10.1101/163931)
-            * Discussion leader: Lauren
-            * Discussion questions: ??
+        * Reading: [Repeated regime shifts in a desert rodent community](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.2373)
+            * Discussion leader: Peter
+            * [Discussion questions]({{ site.baseurl }}/discussion/regime_shift_questions) 
 <br><br>
 
 * September 25
