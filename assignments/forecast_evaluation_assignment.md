@@ -1,11 +1,16 @@
 ---
-title: "Model selection assignment"
+title: "Forecast evaluation assignment"
 output:
   html_document: default
 layout: post
 ---
 
-### Reading ###
+### Overview  ###
+
+The purpose of this assignment is to practice visualizing and quantifying forecast accuracy.
+You will adapt code from the [forecast evaluation lecture]({{ site.baseurl }}/lectures/forecast_evaluation) 
+to evaluate forecasts of the Yellowstone bison population using the "model for prediction" 
+you built in the [model selection assignment]({{ site.baseurl }}/assignments/model_selection_assignment).
 
 This exercise is based on Tredennick et al. (in prep), "A practical guide to selecting models 
 for exploration, understanding, and prediction in ecology." By now you should already have 

@@ -54,7 +54,7 @@ arima_forecast = forecast(arima_model, h = 36)
 
 ```
 plot(arima_forecast)
-lines(NDVI_test)
+lines(NDVI_test,col="red")
 ```
 
 ### Observed-predicted
@@ -68,14 +68,18 @@ abline(0, 1)
 ## Quantify
 
 ```
-accuracy(arima_forecast, NDVI_test)
+arima_accur = accuracy(arima_forecast, NDVI_test)
+arima_accur
 ```
 
 * Errors higher on test than training data because training data is being fit
 * Brier Score == RMSE^2
-* Common method for evaluating forecasts
-
-> Visualize and quantify the accuracy of the seasonal ARIMA model
+    * Common method for evaluating forecasts
+* Others
+    * correlation between observations and predictions (doesn't capture bias)
+    * R^2 of observations regressed on predictions (more informative if compared to null model)  
+    
+### Visualize and quantify the accuracy of the seasonal ARIMA model
 
 ```
 seasonal_arima_model = auto.arima(NDVI_train)
@@ -85,6 +89,7 @@ lines(NDVI_test)
 plot(as.vector(seasonal_arima_forecast$mean), as.vector(NDVI_test))
 abline(0, 1)
 seasonal_accur <- accuracy(seasonal_arima_forecast, NDVI_test)
+seasonal_accur
 ```
 
 ### Coverage

@@ -83,11 +83,11 @@ layout: page
 * September 25
     * Discussion: Understanding vs. prediction
         * Reading: [Breiman 2001](https://projecteuclid.org/euclid.ss/1009213726)
-          * Discussion leader: ??
+          * Discussion leader: Peter
           * Discussion questions: ??
     * Discussion: Understanding vs. prediction and model selection
         * Reading: Tredennick et al. in prep (on Canvas)
-          * Discussion leader: ??
+          * Discussion leader: Peter
           * Discussion questions: ??
 <br><br>
 
