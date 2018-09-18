@@ -109,7 +109,7 @@ sigma = vcov(reg)
 NE = 100      # Ensemble size
 n = matrix(NA,NE,length(x))   # storage for all simulations
 coef_samples = rmvnorm(NE,mean=mu,sigma=sigma)  # sample values of coefficients
-for(i in 1:NE){        # loop over r and K samples
+for(i in 1:NE){        # loop over coefficient samples
   n[i,] = coef_samples[i,1] + coef_samples[i,2]*x   # predict values at each x
 }
 

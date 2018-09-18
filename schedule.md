@@ -111,7 +111,7 @@ layout: page
             * Discussion questions??
     * *Lab:* 
         * [Simulating prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC)
-        * begin [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
+        * Begin [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
 <br><br>
 
 * October 9
@@ -130,10 +130,10 @@ layout: page
 <br><br>
 
 * October 16
-    * DUE: Evaluating forecasts assignment
+    * DUE: [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
     * Discussion: Changes in phenology
         * Reading [Shifting plant phenology in response to global change](https://doi.org/10.1016/j.tree.2007.04.003)
-          * Discussion leader: Michael
+          * Discussion leader: ??
           * Discussion questions: ??
 <br><br> 
 
@@ -148,11 +148,13 @@ layout: page
 * October 23
     * Discussion: Population models--plants
         * Discussion leader: Paige
+        * Discussion questions: ??
  <br><br>
  
  * October 25
     * Discussion: Population models--animals
         * Discussion leader: Brian
+        * Discussion questions: ??
  <br><br>
  
 * October 30
@@ -174,6 +176,7 @@ layout: page
     * Discussion: Biodiversity--species richness
         * Reading: [Harris et al. 2018](https://peerj.com/articles/4278/)
             * Discussion leader: John
+            * Discussion questions: ??
 <br><br>  
  
 * November 8
