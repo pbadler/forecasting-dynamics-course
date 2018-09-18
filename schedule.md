@@ -109,7 +109,9 @@ layout: page
         * Reading: Dietze Chapter 2
             * Discussion leader: Peter ??
             * Discussion questions??
-    * *Lab:* Evaluating forecasts assignment
+    * *Lab:* 
+        * [Simulating prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC)
+        * begin [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
 <br><br>
 
 * October 9

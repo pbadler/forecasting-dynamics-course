@@ -95,7 +95,7 @@ take this into account:
 
 ```
 # simulate an independent variable and a response 
-x = 1:100
+x = seq(1,100,5)
 y = 0.8*x + rnorm(length(x),0,max(x)/5)  # rnorm() adds some noise 
 plot(x,y)
 reg = lm(y~x)
@@ -115,13 +115,20 @@ for(i in 1:NE){        # loop over r and K samples
 # calculate the median and 95% CI limits for each time point
 n.stats = apply(n,2,quantile,c(0.025,0.5,0.975))
 
-# plot the median
+# plot the data
 plot(x,y)
 # add predictions, upper and lower CI's
-lines(predict(reg))
+lines(x,predict(reg))
 lines(x,n.stats[1,],col="blue",lty="dashed")
 lines(x,n.stats[3,], col="blue",lty="dashed")
 ```
+Why does this confidence interval look so narrow compared to the scatter 
+in the observations? 
+
+It's only showing the uncertainty caused by parameter error. 
+We could add the process error on top. For a 
+linear model like this, it is just the variance of the errors (or residuals).
+
 
 
 
