@@ -35,9 +35,9 @@ pacf(NDVI_ts)
 #
 # y_t = c + b1 * y_t-1 + b2 * y_t-2 ... + e_t
 
-arima_model = Arima(NDVI_ts, c(2, 0, 0))
+arima_model = Arima(NDVI_ts, order= c(2, 0, 0))
 arima_model
-plot(NDVI_ts)
+plot(NDVI_ts,type="l")
 lines(fitted(arima_model), col = 'red')
 
 # How is it doing
