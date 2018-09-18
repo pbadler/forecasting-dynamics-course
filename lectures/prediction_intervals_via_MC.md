@@ -1,8 +1,9 @@
 ---
-layout: nil
+title: "Computing prediction intervals with Monte Carlo simulations"
+output:
+  html_document: default
+layout: post
 ---
-
-# Computing prediction intervals with Monte Carlo simulations
 
 For time series models, and other simple linear models, the
 `forecast()` function computes prediction intervals and add them to your
