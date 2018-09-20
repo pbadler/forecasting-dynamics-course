@@ -88,10 +88,10 @@ lines(MA_m49, col="blue", lwd = 3)
 # Multiplicative: Observed = Trend*Seasonal*Irregular (fluctuations in the time series increase with trend)
 # In our data, not much of a trend, no clear relationship between trend and seasonality
 
-Seasonal_residual_add = NDVI.ts - MA_m13
+Seasonal_residual_add = NDVI.ts - MA_m49
 plot(Seasonal_residual_add)
 
-Seasonal_residual_multi = NDVI.ts/MA_m13
+Seasonal_residual_multi = NDVI.ts/MA_m49
 plot(Seasonal_residual_multi)
 
 # So, we've pulled out the trend. What does this plot represent? What's still left in here?
