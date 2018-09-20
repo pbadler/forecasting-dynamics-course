@@ -14,9 +14,9 @@ ignore most of the statistical details. In fact, I've suggested that Andrew
 revise by removing much of the formal statistical discussion. 
 The sections I think are most important are the Introduction 
 (everything up through p. 9) and Examples (p. 22) to the end. 
-Feel free to skim the section statistical paradigms from p. 9-22, 
-but pay a little more attention to the sections on model validation 
-towards the end of that section.
+Feel free to skim the section on statistical paradigms from p. 9-22, 
+but pay a little more attention to the subsections on model validation 
+towards the end of that chunk.
 
 ### Questions
 
