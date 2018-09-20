@@ -84,11 +84,11 @@ layout: page
     * Discussion: Understanding vs. prediction
         * Reading: [Breiman 2001](https://projecteuclid.org/euclid.ss/1009213726)
           * Discussion leader: Peter
-          * Discussion questions: ??
+          * [Discussion questions]({{ site.baseurl }}/discussion/Breiman_questions) 
     * Discussion: Understanding vs. prediction and model selection
         * Reading: Tredennick et al. in prep (on Canvas)
           * Discussion leader: Peter
-          * Discussion questions: ??
+          * [Discussion questions]({{ site.baseurl }}/discussion/Tredennick_model_selection_questions) 
 <br><br>
 
 * September 27
@@ -147,7 +147,7 @@ layout: page
 
 * October 23
     * Discussion: Population models--plants
-        * Discussion leader: Paige
+        * Discussion leader: Emily
         * Discussion questions: ??
  <br><br>
  
