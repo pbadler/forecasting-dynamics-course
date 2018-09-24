@@ -29,20 +29,20 @@ acf(NDVI_ts)
 
 ## Hindcasting
 
-### Test and training data
+#### Test and training data
 
 ```
 NDVI_train <- window(NDVI_ts, end = c(2011, 11))
 NDVI_test <- window(NDVI_ts, start = c(2011, 12))
 ```
 
-### Build model on training data
+#### Build model on training data
 
 ```
 arima_model = auto.arima(NDVI_train, seasonal = FALSE)
 ```
 
-### Make forecast
+#### Make forecast
 
 ```
 arima_forecast = forecast(arima_model, h = 36)
@@ -50,14 +50,14 @@ arima_forecast = forecast(arima_model, h = 36)
 
 ## Visualize
 
-### Time-series
+#### Time-series
 
 ```
 plot(arima_forecast)
 lines(NDVI_test,col="red")
 ```
 
-### Observed-predicted
+#### Observed-predicted
 
 ```
 plot(arima_forecast$mean, NDVI_test)
@@ -79,7 +79,7 @@ arima_accur
     * correlation between observations and predictions (doesn't capture bias)
     * R^2 of observations regressed on predictions (more informative if compared to null model)  
     
-### Visualize and quantify the accuracy of the seasonal ARIMA model
+#### Visualize and quantify the accuracy of the seasonal ARIMA model
 
 ```
 seasonal_arima_model = auto.arima(NDVI_train)
@@ -92,14 +92,14 @@ seasonal_accur <- accuracy(seasonal_arima_forecast, NDVI_test)
 seasonal_accur
 ```
 
-### Coverage
+#### Coverage
 
 ```
 in_interval <- arima_forecast$lower[,1] < NDVI_test & arima_forecast$upper[,1] > NDVI_test
 coverage <- sum(in_interval) / length(NDVI_test)
 ```
 
-### Compare
+#### Compare
 
 ```
 data.frame(arima = arima_accur[2,], seasonal = seasonal_accur[2,])
