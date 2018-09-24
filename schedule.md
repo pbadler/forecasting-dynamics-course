@@ -114,6 +114,7 @@ layout: page
             * Discussion leader: Peter ??
             * Discussion questions??
     * *Lab:* 
+        * Forecast evaluation [demo code]({{ site.baseurl }}/lectures/forecasting_evaluation)
         * [Simulating prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC)
         * Begin [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
 <br><br>

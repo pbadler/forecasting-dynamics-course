@@ -56,3 +56,6 @@ lines(x,true_PI[,3],col="blue")
 # mine 
 lines(x,n.stats[1,],col="blue",lty="dashed")
 lines(x,n.stats[3,], col="blue",lty="dashed")
+
+# try package forecast functions
+lm_forecast = forecast(reg,newdata=data.frame(x=c(10,20,30)))
