@@ -92,18 +92,22 @@ layout: page
 <br><br>
 
 * September 27
+    * Mike Dietze NSF lecture on ecological forecasting
+<br><br>
+
+* October 2
     * DUE: [Introduction to forecasting assignment]({{ site.baseurl }}/assignments/intro_to_forecasting)
     * *Lab:* [Model selection assignment]({{ site.baseurl }}/assignments/model_selection_assignment)
 <br><br>
 
-* October 2
+* October 4
     * Discussion: Data-driven vs. mechanistic models
         * Reading: [Renwick et al. 2018](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.13900)  
             * Discussion leader: Peter
             * Discussion questions: ??
 <br><br>
 
-* October 4
+* October 9
     * DUE: [Model selection assignment]({{ site.baseurl }}/assignments/model_selection_assignment)
     * Discussion: The importance of uncertainty
         * Reading: Dietze Chapter 2
@@ -114,14 +118,14 @@ layout: page
         * Begin [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
 <br><br>
 
-* October 9
+* October 11 
     * Discussion: Economic forecasts
         * Reading: Nate Silver chapter 6 (Canvas)
             * Discussion leader: ??
             * Discussion questions: ??
 <br><br>
 
-* October 11 
+* October 16 
     * Discussion: Elections
       * Reading:
 [The fivethirtyeight.com Predictive Model of the 2008 Presidential Election](https://www.causeweb.org/cause/archive/stats/STATS_50.pdf)
@@ -129,7 +133,7 @@ layout: page
         * Discussion questions: ??
 <br><br>
 
-* October 16
+* October 18
     * DUE: [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
     * Discussion: Changes in phenology
         * Reading [Shifting plant phenology in response to global change](https://doi.org/10.1016/j.tree.2007.04.003)
@@ -137,7 +141,7 @@ layout: page
           * Discussion questions: ??
 <br><br> 
 
-* October 18
+* October 23
     * Discussion: Carbon cycle
         * Reading [Luo et al. 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12766)
           * Discussion leader: Paige
@@ -145,19 +149,19 @@ layout: page
     * *Lab:* Primary production ??
 <br><br>
 
-* October 23
+* October 25
     * Discussion: Population models--plants
         * Discussion leader: Emily
         * Discussion questions: ??
  <br><br>
  
- * October 25
+ * October 30
     * Discussion: Population models--animals
         * Discussion leader: Brian
         * Discussion questions: ??
  <br><br>
  
-* October 30
+* November 1
     * Discussion: Short-term ecological forecasting [quantitative]
         * Reading: [State-space modeling to support management of brucellosis in the Yellowstone bison population](https://doi.org/10.1890/14-1413.1) 
           * Discussion leader: Kylie
@@ -165,52 +169,48 @@ layout: page
     * *Lab:* State-space models
  <br><br>
  
-* November 1
+* November 6
     * Discussion: Remotely-sensed population time-series
         * Reading: [Tredennick et al. 2016](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.1525)
           * Discussion leader: Alex
           * Discussion questions: ??
 <br><br>
  
-* November 6
+* November 8
+    * No lecture, Peter out of town
+    * *Lab:* Work on state-space modeling assignment
+<br><br>  
+ 
+* November 13
+    * DUE: State-space modeling assignment
     * Discussion: Biodiversity--species richness
         * Reading: [Harris et al. 2018](https://peerj.com/articles/4278/)
             * Discussion leader: John
             * Discussion questions: ??
-<br><br>  
- 
-* November 8
-     * Discussion: Biodiversity--community responses to disturbance
-        * Reading: [Species-level and community-level responses to disturbance: a cross-community analysis](https://doi.org/10.1890/13-2250.1)
-          * Discussion leader: ??
-          * Discussion questions: ??
-<br><br>  
-
-* November 13
     * *Lab:* [Forecasting tournament assignment]({{ site.baseurl }}/assignments/tournament) 
 <br><br>  
 
 * November 15
-    * *Lab:* Work on forecasting tournament
-<br><br>      
+    * *Lab:* [Forecasting tournament assignment]({{ site.baseurl }}/assignments/tournament) 
+<br><br>  
 
 * November 20
-    * Discussion: Scenario based foreasting
-        * Reading: [Scenario Planning: a Tool for Conservation in an Uncertain World](https://doi.org/10.1046/j.1523-1739.2003.01491.x)
-          * Discussion leader: Leandro
-	        * Discussion questions: ??
-<br><br> 
+    * *Lab:* Work on forecasting tournament
+<br><br>      
 
 * November 22
     * Thanksgiving, no class
 <br><br> 
 
 * November 27
-    * Validation of species distribution models ?
+    * Discussion: Scenario based foreasting
+        * Reading: [Scenario Planning: a Tool for Conservation in an Uncertain World](https://doi.org/10.1046/j.1523-1739.2003.01491.x)
+          * Discussion leader: Leandro
+	        * Discussion questions: ??
 <br><br> 
 
 * November 29
-    * Model-free forecasts ?
+    * Validation of species distribution models ?
 <br><br> 
 
 * December 4
