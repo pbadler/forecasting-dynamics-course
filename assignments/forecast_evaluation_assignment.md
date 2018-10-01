@@ -5,8 +5,6 @@ output:
 layout: post
 ---
 
-under construction
-
 ### Overview  ###
 
 The purpose of this assignment is to practice visualizing and quantifying forecast accuracy. 
@@ -65,6 +63,8 @@ process error *and* parameter error.)
 training and test data, the predictions for the test data, and the uncertainty
 around the predictions due to *parameter error*. 
 
+As usual, you should turn in both the report (text and figures) and your
+R script(s).  
 
 ### Hints
 
