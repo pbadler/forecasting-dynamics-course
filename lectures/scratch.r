@@ -59,3 +59,69 @@ lines(x,n.stats[3,], col="blue",lty="dashed")
 
 # try package forecast functions
 lm_forecast = forecast(reg,newdata=data.frame(x=c(10,20,30)))
+
+
+###
+### figure out Arima constants -----------------------------------------
+###
+
+library(forecast)
+
+# function to generate an AR1 time series
+ar1 <- function(time_steps,initial_n,a,b,sigma){
+  N <- numeric(time_steps)
+  N[1] = initial_n
+  for(i in 2:time_steps){
+    N[i] = a + b*N[i-1] +rnorm(1,0,sigma)
+  }
+  return(N)
+}
+
+N <- ar1(time_steps=200, initial_n=1, a=5, b=0.5, sigma=0.5)
+plot(N,type="l",xlab="Time")
+abline(h=5/0.5,col="red")
+
+# look at Arima fits
+m1 = Arima(N,order=c(1,0,0))
+m1
+print(coef(m1)[2]*(1-coef(m1)[1])) # calculate "true" intercept
+
+# better when we only use stationary portion
+m2 = Arima(N[50:200],order=c(1,0,0))
+m2
+print(coef(m2)[2]*(1-coef(m2)[1])) # calculate "true" intercept
+
+###
+### figure out ArimaX constants -----------------------------------------
+###
+
+library(forecast)
+
+# function to generate an AR1_X time series
+ar1 <- function(time_steps,initial_n,a,b,betax,x,sigma){
+  N <- numeric(time_steps)
+  N[1] = initial_n
+  for(i in 2:time_steps){
+    N[i] = a + b*N[i-1] +rnorm(1,0,sigma) + betax*x[i]
+  }
+  return(N)
+}
+
+time_steps=500
+
+x = rnorm(time_steps, 0, 1)
+
+N <- ar1(time_steps=time_steps, initial_n=1, a=5, b=0.5, betax=0.1, x=x,sigma=0.5)
+plot(N,type="l",xlab="Time")
+abline(h=5/0.5,col="red")
+
+# look at Arima fits
+m1 = Arima(N,order=c(1,0,0),xreg=x)
+m1
+print(coef(m1)[2]*(1-coef(m1)[1])) # calculate "true" intercept
+
+# use only stationary portion
+m2 = Arima(N[(time_steps/4):time_steps],order=c(1,0,0),xreg=x[(time_steps/4):time_steps])
+m2
+print(coef(m2)[2]*(1-coef(m2)[1])) # calculate "true" intercept
+

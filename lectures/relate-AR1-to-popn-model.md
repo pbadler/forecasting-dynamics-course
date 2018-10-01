@@ -94,3 +94,27 @@ plot(exp(N),type="l",xlab="Time")
 ```
 How do the dynamics of this Gompertz model differ from the 
 those of the AR1 on arithmetic scale?
+
+### Dealing with ARIMA constants
+
+After I wrote this up, I realized that the way `Arima()` is implemented
+in R creates a couple of complications. `Arima()` assumes that the
+intercept of the AR1 model (coefficient $a$ in the notation above)
+is equal to the mean of the time series. If the time-series you
+are fitting is stationary, this isn't a big deal. You can calculate
+$a$ as follows:
+```
+a = coef(ar1_model)[2]*(1 - coef(ar1_model[1])
+```
+where `coef(ar1_model[1]` is the autoregressive term and
+`coef(ar1_model[2]` is the mean. 
+
+However, based on my own little experiments,
+if your time-series is not stationary, and you have not
+included the moving average or differencing terms needed to make
+it stationary, then your estimates of $a$ and $b$ can be way off.
+So if you want to interpret your parameters in a population growth
+context, I recommend avoiding `Arima()` and fitting the lag density 
+term directly using a linear model you specifcy yourself.
+
+

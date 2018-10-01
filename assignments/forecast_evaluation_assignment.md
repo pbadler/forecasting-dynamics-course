@@ -13,8 +13,8 @@ The purpose of this assignment is to practice visualizing and quantifying foreca
 You will adapt code from the [forecast evaluation lecture]({{ site.baseurl }}/lectures/forecast_evaluation) 
 and from the lecture on Monte Carlo simulation of [prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC). We will
 work again with the Yellowstone bison data; you will compare 
-the forecast accuracy of a time-series only model with a
-model that incorporates some climate data as well.
+the forecast accuracy of a "null" model with no climate data to a
+model that incorporates some climate data.
 
 ### Preliminary steps
 
@@ -26,45 +26,73 @@ the first chunk of the script you wrote for that assignment.
 2. Now, split the full data set into a training set, including all years
 up through 2011, and a test set, for years 2012-2017.
 
-3. Fit a time-series-only model to the training data set.
+3. Fit a no-climate model to the training data set. It should look something 
+like: `null_model = lm(logN ~ logN_lag, data = train_data)`.
 
-4. Fit an alternative model that also includes at least one weather covariate. 
-Based on the last assignment, January precipitation would be a good bet. 
+4. Fit an alternative model that also includes at least one weather covariate
+(feel free to fancy it up if you like). 
+Based on the last assignment, January precipitation would be a good bet. So
+this model might look something like: 
+`clim_model = lm(logN ~ logN_lag + ppt_Jan, data = train_data)` .
+
+5. Set up a Monte Carlo simulation to a) generate predictions for the 
+test data period and b) simulate uncertainty due to parameter error.
+Why not just use the `forecast()` function? Because we fit the models using
+`lm()` instead of `Arima()` and `forecast()` won't realize that 
+the lagged density term is autoregressive. (Why didn't I ask you
+to do this using `Arima()`? It's a long story that I will tell you
+in class. The short version: Doing it that way would make some
+things easy but would make the Monte Carlo simulations much
+harder.) 
 
 Now you should be ready to generate forecasts.
 
-### Questions
+### Lab report
 
-1. Generate forecasts for both of your models, then calculate and compare 
-their forecast accuracy. 
+Your assignment is to answer the question: How much (if at all) do
+climate covariates improve the forecasts? Your answer should be based
+on three complementary ways of comparing the two models:
 
-2. Compute and compare the uncertainty due to parameter
-error for each model. To do this, you will need to extract
-the variance-covariance matrix from the model fit, then run a Monte Carlo 
-simulation. 
+1. The accuracy of the point forecasts for the test data. By "point forecast,"
+I mean the mean or median of the Monte Carolo simulations of bison population size 
+for the test data set years.
 
-3. Visualize the forecasts: plot the observed population counts for the 
+2. Uncertainty due to parameter error for each model. (*Bonus:* 
+Run another simulation to estimate uncertainty due to
+process error *and* parameter error.)
+
+3. Visualize the forecasts. Plot the observed population counts for the 
 training and test data, the predictions for the test data, and the uncertainty
 around the predictions due to *parameter error*. 
 
+
 ### Hints
 
-* You can choose whether to fit the two models using time-series tools or using 
-simple linear models. For the time-series approach, you will need to
-turn the bison data and your covariate(s) into `ts()` objects, and then fit
-your models using `arima()`. To do this with `lm()`, you will need to create 
-a lag N (or lag log(N)) covariate. The `forecast()`, and forecast
-plotting functions in package forecast will work with `lm()` objects. However,
-for `lm()` objects, the `accuracy()` function will only return results for the 
-training set. To compute the same metrics for the test set, first use 
-`predict()` to get predictions for the test data set, then pass the predictions
-and observations to the `accuracy()` function. It should look something like this:
+* For `lm()` objects, the `accuracy()` in package forecast
+function will only return results for the training set. To compute 
+the same metrics for the test set, you will pass the function 
+the point predictions from your simulation along with the observations. 
+It should look something like this:
 ```
-test_results = accuracy(my_predictions, test_set$counts)
+test_results = accuracy(my_predictions, test_data$counts)
 ```
+* The crux of this assignment will probably be the Monte Carlo simulations.
+The [prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC)
+demo gives two examples of Monte Carlo simulations, a logistic growth example, 
+and a correlated errors example for a simple regression. You will need to 
+combine the population-growth aspect of the former with the correlated errors
+aspect of the latter.
 
-* That said, while the functions in the forecast package will give you uncertainty due to 
-process error, in order to compute uncertainty due to parameter error (for question 3),
-you will need to do a Monte Carlo simulation. The example I gave you [here]({{ site.baseurl }}/lectures/prediction_intervals_via_MC) does 
-this for an `lm()` object; I have not tried to do this using an `arima()` object. It should
-be possible...
+* Since we are not using the `forecast()` function, you won't
+be able to use the handy `plot.forecast()` function to visualize
+the forecasts. You will have to build your own figure. It should 
+show the observed data for the training and test period, the
+point predictions for the test period, and the 95% confidence
+intervals around those predictions. Extra gratitude to
+whoever shows me how to do this using ggplot. 
+
+* For the bonus problem, remember that the variance of the residuals 
+is equivalent to the process error in a linear regression.
+So a 95% confidence interval around a prediction would be the 
+point prediction +/- two times the standard deviation of the 
+residuals.
