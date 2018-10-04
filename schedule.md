@@ -221,7 +221,7 @@ layout: page
 * December 6
     * Discussion: Can we forecast in ecology (and what can we forecast)?
         * Reading: [Prediction, precaution, and policy under global change](https://doi.org/10.1126/science.1261824)
-          * Discussion Leader: ??
+          * Discussion Leader: Sara
           * Discussion questions: ??
 <br><br> 
 
