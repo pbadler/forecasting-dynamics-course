@@ -104,14 +104,14 @@ layout: page
     * Discussion: Data-driven vs. mechanistic models
         * Reading: [Renwick et al. 2018](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.13900)  
             * Discussion leader: Peter
-            * Discussion questions: [Discussion questions]({{ site.baseurl }}/discussion/Renwick_questions) 
+            * [Discussion questions]({{ site.baseurl }}/discussion/Renwick_questions) 
 <br><br>
 
 * October 9 
     * Discussion: Economic forecasts
         * Reading: Nate Silver chapter 6 (Canvas)
             * Discussion leader: Peter
-            * Discussion questions: Discussion questions: [Discussion questions]({{ site.baseurl }}/discussion/Silver_Economics_questions) 
+            * [Discussion questions]({{ site.baseurl }}/discussion/Silver_Economics_questions) 
 <br><br>
 
 * October 11
