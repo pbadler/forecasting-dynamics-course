@@ -107,7 +107,14 @@ layout: page
             * Discussion questions: [Discussion questions]({{ site.baseurl }}/discussion/Renwick_questions) 
 <br><br>
 
-* October 9
+* October 9 
+    * Discussion: Economic forecasts
+        * Reading: Nate Silver chapter 6 (Canvas)
+            * Discussion leader: Peter
+            * Discussion questions: ??
+<br><br>
+
+* October 11
     * DUE: [Model selection assignment]({{ site.baseurl }}/assignments/model_selection_assignment)
     * Discussion: The importance of uncertainty
         * Reading: Dietze Chapter 2
@@ -119,13 +126,6 @@ layout: page
         * Begin [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
 <br><br>
 
-* October 11 
-    * Discussion: Economic forecasts
-        * Reading: Nate Silver chapter 6 (Canvas)
-            * Discussion leader: ??
-            * Discussion questions: ??
-<br><br>
-
 * October 16 
     * Discussion: Elections
       * Reading:
@@ -135,7 +135,6 @@ layout: page
 <br><br>
 
 * October 18
-    * DUE: [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
     * Discussion: Changes in phenology
         * Reading [Shifting plant phenology in response to global change](https://doi.org/10.1016/j.tree.2007.04.003)
           * Discussion leader: ??
@@ -143,6 +142,7 @@ layout: page
 <br><br> 
 
 * October 23
+    * DUE: [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
     * Discussion: Carbon cycle
         * Reading [Luo et al. 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12766)
           * Discussion leader: Paige
