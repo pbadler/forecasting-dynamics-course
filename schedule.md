@@ -111,7 +111,7 @@ layout: page
     * Discussion: Economic forecasts
         * Reading: Nate Silver chapter 6 (Canvas)
             * Discussion leader: Peter
-            * Discussion questions: ??
+            * Discussion questions: Discussion questions: [Discussion questions]({{ site.baseurl }}/discussion/Silver_Economics_questions) 
 <br><br>
 
 * October 11
