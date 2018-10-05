@@ -136,9 +136,11 @@ layout: page
 
 * October 18
     * Discussion: Changes in phenology
-        * Reading [Shifting plant phenology in response to global change](https://doi.org/10.1016/j.tree.2007.04.003)
-          * Discussion leader: ??
-          * Discussion questions: ??
+        * Reading [Statistical approach to phenology forecasting](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1461-0248.2012.01765.x)
+        * Reading [Mechanistic approach to phenology forecasting](https://www.nature.com/articles/ncomms3303)
+            * Discussion leader: Peter
+            * Discussion questions: ??
+        
 <br><br> 
 
 * October 23
@@ -147,7 +149,7 @@ layout: page
         * Reading [Luo et al. 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12766)
           * Discussion leader: Paige
           * Discussion questions: ??
-    * *Lab:* Primary production ??
+    * *Lab:* Phenology and production lab??
 <br><br>
 
 * October 25
@@ -167,7 +169,7 @@ layout: page
         * Reading: [State-space modeling to support management of brucellosis in the Yellowstone bison population](https://doi.org/10.1890/14-1413.1) 
           * Discussion leader: Kylie
           * Discussion questions: ??
-    * *Lab:* State-space models
+    * *Lab:* State-space model demonstration
  <br><br>
  
 * November 6
@@ -179,11 +181,11 @@ layout: page
  
 * November 8
     * No lecture, Peter out of town
-    * *Lab:* Work on state-space modeling assignment
+    * *Lab:* ??
 <br><br>  
  
 * November 13
-    * DUE: State-space modeling assignment
+    * DUE: Phenology and production lab?
     * Discussion: Biodiversity--species richness
         * Reading: [Harris et al. 2018](https://peerj.com/articles/4278/)
             * Discussion leader: John
@@ -216,6 +218,7 @@ layout: page
 
 * December 4
     * DUE: [Forecasting tournament assignment]({{ site.baseurl }}/assignments/tournament) 
+    * Prizes, award ceremony, press conference, White House phone call, etc.
 <br><br> 
 
 * December 6
