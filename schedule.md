@@ -118,8 +118,8 @@ layout: page
     * DUE: [Model selection assignment]({{ site.baseurl }}/assignments/model_selection_assignment)
     * Discussion: The importance of uncertainty
         * Reading: Dietze Chapter 2
-            * Discussion leader: Peter ??
-            * Discussion questions??
+            * Discussion leader: Peter 
+            * [Discussion questions]({{ site.baseurl }}/discussion/Dietze_uncertainty_questions) 
     * *Lab:* 
         * Forecast evaluation [demo code]({{ site.baseurl }}/lectures/forecasting-evaluation)
         * [Simulating prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC)
@@ -140,7 +140,6 @@ layout: page
         * Reading [Mechanistic approach to phenology forecasting](https://www.nature.com/articles/ncomms3303)
             * Discussion leader: Peter
             * Discussion questions: ??
-        
 <br><br> 
 
 * October 23
