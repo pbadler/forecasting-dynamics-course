@@ -147,6 +147,7 @@ layout: page
 <br><br> 
 
 * October 25
+    * DUE: [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
     * Discussion: Carbon cycle
         * Reading [Luo et al. 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12766)
           * Discussion leader: Paige
@@ -161,7 +162,6 @@ layout: page
  <br><br>
  
 * November 1
-     * DUE: [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
     * Discussion: Population models--animals
         * Discussion leader: Brian
         * Discussion questions: ??
