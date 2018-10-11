@@ -126,16 +126,16 @@ layout: page
         * Begin [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
 <br><br>
 
-* October 16 
+* October 16
+    * *Lab:* Work on [evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
+<br><br>
+
+* October 18 
     * Discussion: Elections
       * Reading:
 [The fivethirtyeight.com Predictive Model of the 2008 Presidential Election](https://www.causeweb.org/cause/archive/stats/STATS_50.pdf)
         * Discussion leader: Binod
         * Discussion questions: ??
-<br><br>
-
-* October 18
-    * *Lab:* Work on [evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
 <br><br>
 
 * October 23
