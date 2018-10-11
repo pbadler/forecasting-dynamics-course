@@ -135,6 +135,10 @@ layout: page
 <br><br>
 
 * October 18
+    * *Lab:* Work on [evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
+<br><br>
+
+* October 23
     * Discussion: Changes in phenology
         * Reading [Statistical approach to phenology forecasting](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1461-0248.2012.01765.x)
         * Reading [Mechanistic approach to phenology forecasting](https://www.nature.com/articles/ncomms3303)
@@ -142,8 +146,7 @@ layout: page
             * Discussion questions: ??
 <br><br> 
 
-* October 23
-    * DUE: [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
+* October 25
     * Discussion: Carbon cycle
         * Reading [Luo et al. 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12766)
           * Discussion leader: Paige
@@ -151,40 +154,42 @@ layout: page
     * *Lab:* Phenology and production lab??
 <br><br>
 
-* October 25
+* October 30
     * Discussion: Population models--plants
         * Discussion leader: Emily
         * Discussion questions: ??
  <br><br>
  
- * October 30
+* November 1
+     * DUE: [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
     * Discussion: Population models--animals
         * Discussion leader: Brian
         * Discussion questions: ??
  <br><br>
  
-* November 1
+* November 6
     * Discussion: Short-term ecological forecasting [quantitative]
         * Reading: [State-space modeling to support management of brucellosis in the Yellowstone bison population](https://doi.org/10.1890/14-1413.1) 
           * Discussion leader: Kylie
           * Discussion questions: ??
     * *Lab:* State-space model demonstration
  <br><br>
- 
-* November 6
-    * Discussion: Remotely-sensed population time-series
-        * Reading: [Tredennick et al. 2016](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.1525)
-          * Discussion leader: Alex
-          * Discussion questions: ??
-<br><br>
- 
+
+
 * November 8
     * No lecture, Peter out of town
     * *Lab:* ??
 <br><br>  
- 
+
 * November 13
-    * DUE: Phenology and production lab?
+    * Discussion: Remotely-sensed population time-series
+        * Reading: [Tredennick et al. 2016](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.1525)
+          * Discussion leader: Alex
+          * Discussion questions: ??
+    * *Lab:* [Forecasting tournament assignment]({{ site.baseurl }}/assignments/tournament) 
+<br><br>
+ 
+* November 15
     * Discussion: Biodiversity--species richness
         * Reading: [Harris et al. 2018](https://peerj.com/articles/4278/)
             * Discussion leader: John
@@ -192,13 +197,9 @@ layout: page
     * *Lab:* [Forecasting tournament assignment]({{ site.baseurl }}/assignments/tournament) 
 <br><br>  
 
-* November 15
+* November 20
     * *Lab:* [Forecasting tournament assignment]({{ site.baseurl }}/assignments/tournament) 
 <br><br>  
-
-* November 20
-    * *Lab:* Work on forecasting tournament
-<br><br>      
 
 * November 22
     * Thanksgiving, no class
