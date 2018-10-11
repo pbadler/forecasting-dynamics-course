@@ -43,7 +43,7 @@ in class. The short version: Doing it that way would make some
 things easy but would make the Monte Carlo simulations much
 harder.) 
 
-Now you should be ready to generate forecasts.
+Now you should be ready to evaluate your forecasts.
 
 ### Lab report
 

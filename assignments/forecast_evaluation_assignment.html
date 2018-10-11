@@ -135,7 +135,7 @@ $(document).ready(function () {
 <li><p>Fit an alternative model that also includes at least one weather covariate (feel free to fancy it up if you like). Based on the last assignment, January precipitation would be a good bet. So this model might look something like: <code>clim_model = lm(logN ~ logN_lag + ppt_Jan, data = train_data)</code> .</p></li>
 <li><p>Set up a Monte Carlo simulation to a) generate predictions for the test data period and b) simulate uncertainty due to parameter error. Why not just use the <code>forecast()</code> function? Because we fit the models using <code>lm()</code> instead of <code>Arima()</code> and <code>forecast()</code> won’t realize that the lagged density term is autoregressive. (Why didn’t I ask you to do this using <code>Arima()</code>? It’s a long story that I will tell you in class. The short version: Doing it that way would make some things easy but would make the Monte Carlo simulations much harder.)</p></li>
 </ol>
-<p>Now you should be ready to generate forecasts.</p>
+<p>Now you should be ready to evaluate your forecasts.</p>
 </div>
 <div id="lab-report" class="section level3">
 <h3>Lab report</h3>
