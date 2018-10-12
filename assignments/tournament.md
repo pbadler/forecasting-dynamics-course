@@ -27,14 +27,16 @@ in the covariates which would be present if we were relying on climate projectio
 class describing their model.
 5. After everyone has submitted their forecasts (just five numbers), 
 I will evaluate their accuracy by comparing them to the observed 2014-2018
-values using RMSE? ASE? 
+values using mean absolute error (MAE). 
 6. The winning team will bask in eternal glory, and a cheap candy prize.
 
 ### Background ###
 
 As we've discussed, mechanistic knowledge can improve forecasts. The forage
-data come from the Sierra Nevada foothills of California. Here is the citation for the data, 
-which USDA NRCS and University of California Extension have generously made public for our use:
+data come from the [San Joaquin Experimental Range](https://www.fs.fed.us/psw/ef/san_joaquin/), 
+in the Sierra Nevada foothills 
+of California. Here is the citation for the data, which USDA NRCS and 
+University of California Extension have generously made public for our use:
 
 Dennis Dudley, USDA NRCS Rangeland Specialist, Madera County; Neil McDougald, UCCE Livestock, 
 Range, and Natural Resources Advisor Emeritus, Madera County
@@ -43,7 +45,8 @@ This is an annual grassland,
 so measuring aboveground annual production (forage production) is straightforward:
 biomass is clipped to ground level, dried, and weighed. This is usually done in June 
 at the end of the spring growing season. For more information about the factors
-that determine productivity in these grasslands, see....
+that determine productivity in these grasslands, see this
+[report](http://sfrec.ucanr.edu/files/183301.pdf).
 
 I downloaded the weather data from the [PRISM Explorer](http://www.prism.oregonstate.edu/explorer/). You can find some
 metadata [here](https://github.com/pbadler/forecasting-dynamics-course/blob/master/data/tournament_prism_notes.txt). "ppt" refers to precipitation, "t" to temperature,
