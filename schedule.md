@@ -134,8 +134,10 @@ layout: page
     * Discussion: Elections
       * Reading:
 [The fivethirtyeight.com Predictive Model of the 2008 Presidential Election](https://www.causeweb.org/cause/archive/stats/STATS_50.pdf)
+      * Reading: Silver's chapter on political forecasts (on Cavnas)
+      * Recommended but not required reading: [Silver on the 2016 election](https://news.harvard.edu/gazette/story/2017/03/nate-silver-says-conventional-wisdom-not-data-killed-2016-election-forecasts/)
         * Discussion leader: Binod
-        * Discussion questions: ??
+        * [Discussion questions]({{ site.baseurl }}/discussion/Silver_Elections_questions)
 <br><br>
 
 * October 23
