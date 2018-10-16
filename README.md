@@ -8,5 +8,3 @@ at the University of Florida:
 
 Course website: http://weecology.github.io/forecasting-dynamics-course
 
-[baseurl]( {{site.baseurl }})
-[siteurl]( {{site.url }})
