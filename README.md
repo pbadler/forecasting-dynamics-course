@@ -7,3 +7,4 @@ This course is based the version offered by Morgan Ernest and Ethan White
 at the University of Florida:
 
 Course website: http://weecology.github.io/forecasting-dynamics-course
+
