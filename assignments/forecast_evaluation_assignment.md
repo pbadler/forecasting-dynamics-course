@@ -8,7 +8,7 @@ layout: post
 ### Overview  ###
 
 The purpose of this assignment is to practice visualizing and quantifying forecast accuracy. 
-You will adapt code from the [forecast evaluation lecture]({{ site.baseurl }}/lectures/forecast_evaluation) 
+You will adapt code from the [forecast evaluation lecture]({{ site.baseurl }}/lectures/forecasting-evaluation) 
 and from the lecture on Monte Carlo simulation of [prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC). We will
 work again with the Yellowstone bison data; you will compare 
 the forecast accuracy of a "null" model with no climate data to a
