@@ -96,3 +96,16 @@ is equivalent to the process error in a linear regression.
 So a 95% confidence interval around a prediction would be the 
 point prediction +/- two times the standard deviation of the 
 residuals.
+
+##  Test links
+
+Try these:
+
+* Forecast evaluation [demo code]({{ site.baseurl }}/lectures/forecasting-evaluation)
+
+* [Simulating prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC)
+
+* Begin [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
+
+
+
