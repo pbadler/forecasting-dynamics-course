@@ -8,15 +8,15 @@ layout: post
 ### Overview  ###
 
 The purpose of this assignment is to practice visualizing and quantifying forecast accuracy. 
-You will adapt code from the [forecast evaluation lecture]({{ site.baseurl }}/lectures/forecasting-evaluation) 
-and from the lecture on Monte Carlo simulation of [prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC). We will
+You will adapt code from the [forecast evaluation lecture](https://pbadler.github.io/forecasting-dynamics-course/lectures/forecasting-evaluation) 
+and from the lecture on Monte Carlo simulation of [prediction intervals](https://pbadler.github.io/forecasting-dynamics-course/lectures/prediction_intervals_via_MC). We will
 work again with the Yellowstone bison data; you will compare 
 the forecast accuracy of a "null" model with no climate data to a
 model that incorporates some climate data.
 
 ### Preliminary steps
 
-1. Download the same data you used for the [model selection assignment]({{ site.baseurl }}/assignments/model_selection_assignment), and then prepare the data the same way
+1. Download the same data you used for the [model selection assignment](https://pbadler.github.io/forecasting-dynamics-course/assignments/model_selection_assignment), and then prepare the data the same way
 (creating log(N) and lag log(N) variables, and aggregating and merging the 
 precipitation data to annual time scale). You should be able to copy and paste
 the first chunk of the script you wrote for that assignment.
@@ -77,7 +77,7 @@ It should look something like this:
 test_results = accuracy(my_predictions, test_data$counts)
 ```
 * The crux of this assignment will probably be the Monte Carlo simulations.
-The [prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC)
+The [prediction intervals](https://pbadler.github.io/forecasting-dynamics-course/lectures/prediction_intervals_via_MC)
 demo gives two examples of Monte Carlo simulations, a logistic growth example, 
 and a correlated errors example for a simple regression. You will need to 
 combine the population-growth aspect of the former with the correlated errors
