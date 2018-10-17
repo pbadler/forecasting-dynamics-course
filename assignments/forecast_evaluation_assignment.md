@@ -81,7 +81,7 @@ three ways:
     * Second, when you sample random values of the coefficients, you will draw
   from a multivariate normal distribution to account for correlated errors.
   To do this you will need to extract the variance-covariance
-  matrix using (`vcov(my_model)`, and you will replace the two `rnorm()` calls
+  matrix using `vcov(my_model)`, and you will replace the two `rnorm()` calls
   with one `rmvnorm()` call. You should be able to copy code from the
   correlated errors example.
     * The third change will be the hardest. In the logistic growth example, I 
