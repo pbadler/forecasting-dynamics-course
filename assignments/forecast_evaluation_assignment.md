@@ -8,15 +8,15 @@ layout: post
 ### Overview  ###
 
 The purpose of this assignment is to practice visualizing and quantifying forecast accuracy. 
-You will adapt code from the [forecast evaluation lecture](https://pbadler.github.io/forecasting-dynamics-course/lectures/forecasting-evaluation) 
-and from the lecture on Monte Carlo simulation of [prediction intervals](https://pbadler.github.io/forecasting-dynamics-course/lectures/prediction_intervals_via_MC). We will
+You will adapt code from the [forecast evaluation lecture](../lectures/forecasting-evaluation) 
+and from the lecture on Monte Carlo simulation of [prediction intervals](../lectures/prediction_intervals_via_MC). We will
 work again with the Yellowstone bison data; you will compare 
 the forecast accuracy of a "null" model with no climate data to a
 model that incorporates some climate data.
 
 ### Preliminary steps
 
-1. Download the same data you used for the [model selection assignment](https://pbadler.github.io/forecasting-dynamics-course/assignments/model_selection_assignment), and then prepare the data the same way
+1. Download the same data you used for the [model selection assignment](./model_selection_assignment), and then prepare the data the same way
 (creating log(N) and lag log(N) variables, and aggregating and merging the 
 precipitation data to annual time scale). You should be able to copy and paste
 the first chunk of the script you wrote for that assignment.
@@ -97,15 +97,7 @@ So a 95% confidence interval around a prediction would be the
 point prediction +/- two times the standard deviation of the 
 residuals.
 
-##  Test links
 
-Try these:
-
-* Forecast evaluation [demo code](../lectures/forecasting-evaluation)
-
-* [Simulating prediction intervals](../lectures/prediction_intervals_via_MC)
-
-* Begin [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
 
 
 

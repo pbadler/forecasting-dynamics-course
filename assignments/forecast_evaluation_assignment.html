@@ -124,12 +124,12 @@ $(document).ready(function () {
 
 <div id="overview" class="section level3">
 <h3>Overview</h3>
-<p>The purpose of this assignment is to practice visualizing and quantifying forecast accuracy. You will adapt code from the <a href="https://pbadler.github.io/forecasting-dynamics-course/lectures/forecasting-evaluation">forecast evaluation lecture</a> and from the lecture on Monte Carlo simulation of <a href="https://pbadler.github.io/forecasting-dynamics-course/lectures/prediction_intervals_via_MC">prediction intervals</a>. We will work again with the Yellowstone bison data; you will compare the forecast accuracy of a “null” model with no climate data to a model that incorporates some climate data.</p>
+<p>The purpose of this assignment is to practice visualizing and quantifying forecast accuracy. You will adapt code from the <a href="../lectures/forecasting-evaluation">forecast evaluation lecture</a> and from the lecture on Monte Carlo simulation of <a href="../lectures/prediction_intervals_via_MC">prediction intervals</a>. We will work again with the Yellowstone bison data; you will compare the forecast accuracy of a “null” model with no climate data to a model that incorporates some climate data.</p>
 </div>
 <div id="preliminary-steps" class="section level3">
 <h3>Preliminary steps</h3>
 <ol style="list-style-type: decimal">
-<li><p>Download the same data you used for the <a href="https://pbadler.github.io/forecasting-dynamics-course/assignments/model_selection_assignment">model selection assignment</a>, and then prepare the data the same way (creating log(N) and lag log(N) variables, and aggregating and merging the precipitation data to annual time scale). You should be able to copy and paste the first chunk of the script you wrote for that assignment.</p></li>
+<li><p>Download the same data you used for the <a href="./model_selection_assignment">model selection assignment</a>, and then prepare the data the same way (creating log(N) and lag log(N) variables, and aggregating and merging the precipitation data to annual time scale). You should be able to copy and paste the first chunk of the script you wrote for that assignment.</p></li>
 <li><p>Now, split the full data set into a training set, including all years up through 2011, and a test set, for years 2012-2017.</p></li>
 <li><p>Fit a no-climate model to the training data set. It should look something like: <code>null_model = lm(logN ~ logN_lag, data = train_data)</code>.</p></li>
 <li><p>Fit an alternative model that also includes at least one weather covariate (feel free to fancy it up if you like). Based on the last assignment, January precipitation would be a good bet. So this model might look something like: <code>clim_model = lm(logN ~ logN_lag + ppt_Jan, data = train_data)</code> .</p></li>
@@ -155,15 +155,6 @@ $(document).ready(function () {
 <li><p>The crux of this assignment will probably be the Monte Carlo simulations. The <a href="https://pbadler.github.io/forecasting-dynamics-course/lectures/prediction_intervals_via_MC">prediction intervals</a> demo gives two examples of Monte Carlo simulations, a logistic growth example, and a correlated errors example for a simple regression. You will need to combine the population-growth aspect of the former with the correlated errors aspect of the latter.</p></li>
 <li><p>Since we are not using the <code>forecast()</code> function, you won’t be able to use the handy <code>plot.forecast()</code> function to visualize the forecasts. You will have to build your own figure. It should show the observed data for the training and test period, the point predictions for the test period, and the 95% confidence intervals around those predictions. Extra gratitude to whoever shows me how to do this using ggplot.</p></li>
 <li><p>For the bonus problem, remember that the variance of the residuals is equivalent to the process error in a linear regression. So a 95% confidence interval around a prediction would be the point prediction +/- two times the standard deviation of the residuals.</p></li>
-</ul>
-</div>
-<div id="test-links" class="section level2">
-<h2>Test links</h2>
-<p>Try these:</p>
-<ul>
-<li><p>Forecast evaluation <a href="../lectures/forecasting-evaluation">demo code</a></p></li>
-<li><p><a href="../lectures/prediction_intervals_via_MC">Simulating prediction intervals</a></p></li>
-<li><p>Begin <a href="%7B%7B%20site.baseurl%20%7D%7D/assignments/forecast_evaluation_assignment">Evaluating forecasts assignment</a></p></li>
 </ul>
 </div>
 
