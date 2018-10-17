@@ -68,7 +68,38 @@ R script(s).
 
 ### Hints
 
-* For `lm()` objects, the `accuracy()` in package forecast
+* The crux of this assignment will probably be the Monte Carlo simulations.
+The [prediction intervals](../lectures/prediction_intervals_via_MC)
+demo gives two examples of Monte Carlo simulations, a logistic growth example, 
+and a correlated errors example for a simple regression. You should start with the 
+logistic growth example as a template. You will need to modify it in 
+three ways:
+    * First, replace $r$ and $K$ with the coefficients from your null model (or your 
+  climate model), and change the logistic growth equation to the equation that 
+  corresponds to the model you fit. Extract the mean values of the coefficients
+  using `coef(my_model)`. 
+    * Second, when you sample random values of the coefficients, you will draw
+  from a multivariate normal distribution to account for correlated errors.
+  To do this you will need to extract the variance-covariance
+  matrix using (`vcov(my_model)`, and you will replace the two `rnorm()` calls
+  with one `rmvnorm()` call. You should be able to copy code from the
+  correlated errors example.
+    * The third change will be the hardest. In the logistic growth example, I 
+  just initialized the model at some arbitrarily low value and ran forward from there.
+  In this case, we want to make predictions for six years (2012 to 2017), but we want
+  to start from the population size observed in 2011. So we are really starting 
+  our "test set" simulation from 2011. (Later on, you will have to decide whether or 
+  not to plot 2011 as a test set prediction.) Here is how I set up the `n` 
+  matrix to hold my simulation results:
+```
+tot_time = NROW(test) + 1   # number of time steps: add one for the initial condition
+n = matrix(NA,NE,tot_time)   # storage for all simulations
+n[,1] = test$logN_lag[test$year==2012]     # set initial conditions to LAG popn. size in year 2012
+```
+
+  
+* Once you have predictions, you can calculate their accuracy.
+For `lm()` objects, the `accuracy()` in package forecast
 function will only return results for the training set. To compute 
 the same metrics for the test set, you will pass the function 
 the point predictions from your simulation along with the observations. 
@@ -76,12 +107,6 @@ It should look something like this:
 ```
 test_results = accuracy(my_predictions, test_data$counts)
 ```
-* The crux of this assignment will probably be the Monte Carlo simulations.
-The [prediction intervals](https://pbadler.github.io/forecasting-dynamics-course/lectures/prediction_intervals_via_MC)
-demo gives two examples of Monte Carlo simulations, a logistic growth example, 
-and a correlated errors example for a simple regression. You will need to 
-combine the population-growth aspect of the former with the correlated errors
-aspect of the latter.
 
 * Since we are not using the `forecast()` function, you won't
 be able to use the handy `plot.forecast()` function to visualize
