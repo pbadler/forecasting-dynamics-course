@@ -101,11 +101,11 @@ residuals.
 
 Try these:
 
-* Forecast evaluation [demo code]({{ site.baseurl }}/lectures/forecasting-evaluation)
+* Forecast evaluation [demo code]({{ site.url }}/lectures/forecasting-evaluation)
 
-* [Simulating prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC)
+* [Simulating prediction intervals]({{ site.url }}/lectures/prediction_intervals_via_MC)
 
-* Begin [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
+* Begin [Evaluating forecasts assignment]({{ site.url }}/assignments/forecast_evaluation_assignment)
 
 
 
