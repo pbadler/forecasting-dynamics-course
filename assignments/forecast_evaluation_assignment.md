@@ -101,9 +101,9 @@ residuals.
 
 Try these:
 
-* Forecast evaluation [demo code]({{ site.baseurl }}/lectures/forecasting-evaluation)
+* Forecast evaluation [demo code](../lectures/forecasting-evaluation)
 
-* [Simulating prediction intervals]({{ site.baseurl }}/lectures/prediction_intervals_via_MC)
+* [Simulating prediction intervals](../lectures/prediction_intervals_via_MC)
 
 * Begin [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
 
