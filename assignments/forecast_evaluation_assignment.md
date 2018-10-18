@@ -41,7 +41,10 @@ the lagged density term is autoregressive. (Why didn't I ask you
 to do this using `Arima()`? It's a long story that I will tell you
 in class. The short version: Doing it that way would make some
 things easy but would make the Monte Carlo simulations much
-harder.) 
+harder.) *Assume that future (test set) climate covariates are 
+known, but that "true" lag population size is known only in
+year 2012. After that, use your predicted population sizes
+as the lag values in subsequent years.*
 
 Now you should be ready to evaluate your forecasts.
 
