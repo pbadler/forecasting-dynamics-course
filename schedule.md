@@ -145,7 +145,7 @@ layout: page
         * Reading [Statistical approach to phenology forecasting](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1461-0248.2012.01765.x)
         * Reading [Mechanistic approach to phenology forecasting](https://www.nature.com/articles/ncomms3303)
             * Discussion leader: Peter
-            * Discussion questions: ??
+            * [Discussion questions]({{ site.baseurl }}/discussion/phenology_questions)
 <br><br> 
 
 * October 25
