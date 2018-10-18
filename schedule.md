@@ -149,18 +149,18 @@ layout: page
 <br><br> 
 
 * October 25
-    * DUE: [Evaluating forecasts assignment]({{ site.baseurl }}/assignments/forecast_evaluation_assignment)
     * Discussion: Carbon cycle
         * Reading [Luo et al. 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12766)
           * Discussion leader: Paige
           * Discussion questions: ??
-    * *Lab:* Phenology and production lab??
 <br><br>
 
 * October 30
+    * DUE: [Evaluating forecasts assignment]({{ site.baseurl}}/assignments/forecast_evaluation_assignment)
     * Discussion: Population models--plants
         * Discussion leader: Emily
         * Discussion questions: ??
+    * Lab: Peter's plant population model demonstration
  <br><br>
  
 * November 1
