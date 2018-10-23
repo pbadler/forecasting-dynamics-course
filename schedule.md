@@ -152,12 +152,12 @@ layout: page
     * Discussion: Carbon cycle
         * Reading [Luo et al. 2015](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.12766)
           * Discussion leader: Paige
-          * Discussion questions: ??
+          * [Discussion questions]({{ site.baseurl }}/discussion/carbon_cycle_questions)
 <br><br>
 
 * October 30
     * DUE: [Evaluating forecasts assignment]({{ site.baseurl}}/assignments/forecast_evaluation_assignment)
-    * Discussion: Population models--plants
+    * Reading: [Population models--plants](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/07-2095.1)
         * Discussion leader: Emily
         * Discussion questions: ??
     * Lab: Peter's plant population model demonstration
