@@ -159,7 +159,7 @@ layout: page
     * DUE: [Evaluating forecasts assignment]({{ site.baseurl}}/assignments/forecast_evaluation_assignment)
     * Reading: [Population models--plants](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/07-2095.1)
         * Discussion leader: Emily
-        * Discussion questions: ??
+        * [Discussion questions]({{ site.baseurl }}/discussion/plant_invasion_questions)
     * Lab: Peter's plant population model demonstration
  <br><br>
  
