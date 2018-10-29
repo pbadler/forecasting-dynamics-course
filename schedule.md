@@ -164,9 +164,9 @@ layout: page
  <br><br>
  
 * November 1
-    * Discussion: Population models--animals
+    * Reading: [Population models--animals](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2419.2005.00346.x)
         * Discussion leader: Brian
-        * Discussion questions: ??
+        * [Discussion questions]({{ site.baseurl }}/discussion/salmon_questions)
  <br><br>
  
 * November 6
