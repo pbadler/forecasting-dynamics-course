@@ -173,7 +173,7 @@ layout: page
     * Discussion: Short-term ecological forecasting [quantitative]
         * Reading: [State-space modeling to support management of brucellosis in the Yellowstone bison population](https://doi.org/10.1890/14-1413.1) 
           * Discussion leader: Kylie
-          * Discussion questions: ??
+          * [Discussion questions]({{ site.baseurl }}/discussion/bison_brucellosis_questions)
     * *Lab:* State-space model demonstration
  <br><br>
 
