@@ -16,11 +16,21 @@ excellent
 
 ## State space models
 
-* Include first order autoregressive component only
-* Separately model
-    * the process model - how the system evolves in time or space
-	* the observation model - observation error or indirect observations
-* Estimates that true value of the underlying **latent** state variables
+These models assume that observations do not prefectly represent the
+true value of the underlying **latent** state variables. We model
+the process with those latent, true values, and link the process
+to the observations an "observation model."
+
+```
+y_t-1    y_t    y_t+1   Observation model
+  |       |       |
+x_t-1 -> x_t -> x_t+1   Process model
+```
+* In other words, we separately model
+    * the process - how the system evolves in time or space
+	  * the observations - observation error or indirect observations
+
+* Our model will only include a first order autoregressive component.
 
 ## Data
 
@@ -33,15 +43,6 @@ time = as.Date(gflu$Date)
 y = gflu$Massachusetts
 plot(time,y,type='l',ylab="Flu Index",lwd=2,log='y')
 ```
-
-> Draw on board while walking through models
-
-```
-y_t-1    y_t    y_t+1
-  |       |       |
-x_t-1 -> x_t -> x_t+1   Process model
-```
-
 
 ### Process model
 
@@ -57,9 +58,9 @@ x_t+1 = b0 + b1 * x_t + e_t
 
 ### Observation model
 
-* Google searches aren't perfect measures of the number of flu cases (which are
-  what should be changing in the process model and what we care about)
-* So model this imperfect observation
+* Google searches aren't perfect measures of the number of flu cases 
+(which are what should be changing in the process model and what we care about)
+* So we model this imperfect observation
 
 y_t = x_t + e_t
 
@@ -70,7 +71,7 @@ y_t = x_t + e_t
 
 * Models like this are not trivial to fit
 * Use [JAGS (Just Another Gibbs Sampler)](http://mcmc-jags.sourceforge.net) to
-  fit the model using Bayesian methods. The rjags library use R to call JAGS.
+  fit the model using Bayesian computational methods. The rjags library uses R to call JAGS.
 
 ```{r}
 library(rjags)
@@ -79,17 +80,18 @@ library(rjags)
 
 ## Model
 
-* JAGS code to describe the model
-* Store as string in R
-* Three components
-    * data model
-	    * relates observed data (y) to latent variable (x)
-		* Gaussian obs error
-	* process model
-	    * relates state of the system at *t* to the state at *t-1*
-		* random walk (x_t = x_t-1 + e_t)
-	* priors
-* Bayesian methods need priors, or starting points for model fitting
+JAGS code to describe the model is stored as a string in R. It has three sections:
+
+1. data model
+    * relates observed data (y) to latent variable (x)
+    * Gaussian obs error
+		  
+2. process model
+    * relates state of the system at $t$ to the state at $t-1$
+    * random walk (x_t = x_t-1 + e_t)
+		  
+3. priors
+    * Bayesian methods need priors (even if uninformative) as well as starting points for model fitting
 
 ```{r}
 RandomWalk = "
@@ -113,7 +115,7 @@ model{
 "
 ```
 
-* Data and priors as a list
+* Data and priors are stored as a list
 
 ```{r}
 data <- list(y=log(y), n=length(y),
@@ -121,14 +123,14 @@ data <- list(y=log(y), n=length(y),
 			 a_obs=1, r_obs=1, a_add=1, r_add=1)
 ```
 
-* Starting point of parameters
+* We also store a list with initial values for the parameters.
 
 ```{r}
 init <- list(list(tau_add=1/var(diff(log(y))),tau_obs=5/var(log(y))))
 ```
 
 * Normally would want several chains with different starting positions to avoid
-  local minima
+  local minima.
 
 * Send to JAGS
 
@@ -156,12 +158,11 @@ jags.out   <- coda.samples (model = j.model,
                             n.iter = 10000)
 ```
 
-* Visualize
-* Convert the output into a matrix & drop parameters
+* Visualize: convert the output into a matrix 
 
 ```{r}
 out <- as.matrix(jags.out)
-xs <- exp(out[,3:ncol(out)])
+xs <- out[,3:ncol(out)] # just the predicted x's
 ```
 
 * Point predictions are averages across MCMC samples
