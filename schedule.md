@@ -187,7 +187,7 @@ layout: page
     * Discussion: Remotely-sensed population time-series
         * Reading: [Tredennick et al. 2016](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.1525)
           * Discussion leader: Alex
-          * Discussion questions: ??
+          * [Discussion questions]({{ site.baseurl }}/discussion/Tredennick_remote_sensing_questions)
     * *Lab:* [Forecasting tournament assignment]({{ site.baseurl }}/assignments/tournament) 
 <br><br>
  
