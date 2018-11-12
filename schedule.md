@@ -195,7 +195,7 @@ layout: page
     * Discussion: Biodiversity--species richness
         * Reading: [Harris et al. 2018](https://peerj.com/articles/4278/)
             * Discussion leader: John
-            * Discussion questions: ??
+            * [Discussion questions]({{ site.baseurl }}/discussion/Biodiversity_questions)
     * *Lab:* [Forecasting tournament assignment]({{ site.baseurl }}/assignments/tournament) 
 <br><br>  
 
