@@ -5,8 +5,6 @@ output:
 layout: post
 ---
 
-(under construction)
-
 ### Let the games begin ###
 
 Do you think you are a good forecaster? A bad one? There is only one way to find out:
@@ -24,11 +22,17 @@ for years 2014-2018 (using the covariates for those years). Since
 we are hindcasting, the covariates are known, and we can ignore uncertainty 
 in the covariates which would be present if we were relying on climate projections.
 4. Each group will also prepare a 5 minute presentation for the rest of the 
-class describing their model.
-5. After everyone has submitted their forecasts (just five numbers), 
-I will evaluate their accuracy by comparing them to the observed 2014-2018
-values using mean absolute error (MAE). 
-6. The winning team will bask in eternal glory, and a cheap candy prize.
+class describing their model, and the choices they made to arrive at that model.
+5. Submit your forecast as a .csv file on Canvas. If you do not estimate uncertainty
+(confidence intervals), your file will just have one column of five numbers. If you
+can estimate uncertainty, your file will have three columns: 1) the point forecast
+for each year, and the 2) upper and 3) lower confidence limits for each year. *Please also
+submit your R script.*
+6. I will evaluate forecast accuracy by comparing your predictions to the observed 
+2014-2018 values using mean absolute error (MAE). 
+7. The winning team will bask in eternal glory, and a cheap candy prize. An additional
+prize will go to the team making the most accurate forecast that also quantifies 
+forecast uncertainty.
 
 ### Background ###
 
