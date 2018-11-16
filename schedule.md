@@ -201,6 +201,7 @@ layout: page
 
 * November 20
     * *Lab:* [Forecasting tournament assignment]({{ site.baseurl }}/assignments/tournament) 
+    * Note: Here is the code that adds process error to the bison model: [github link](https://github.com/pbadler/forecasting-dynamics-course/blob/master/lectures/uncertainty-sims-YNP-bison.R)
 <br><br>  
 
 * November 22
