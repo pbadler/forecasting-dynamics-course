@@ -216,7 +216,11 @@ layout: page
 <br><br> 
 
 * November 29
-    * Validation of species distribution models ?
+    * Discussion: Validation of species distribution models
+      * Reading: [Maguire et al.]{http://rspb.royalsocietypublishing.org/content/283/1826/20152817}
+      * Reading: [Blois et al.]{http://www.pnas.org/content/110/23/9374/}
+          * Discussion leader: Peter
+          * [Discussion questions]({{ site.baseurl }}/discussion/SDM_validation_questions)
 <br><br> 
 
 * December 4
