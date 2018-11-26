@@ -212,7 +212,7 @@ layout: page
     * Discussion: Scenario based foreasting
         * Reading: [Scenario Planning: a Tool for Conservation in an Uncertain World](https://doi.org/10.1046/j.1523-1739.2003.01491.x)
           * Discussion leader: Leandro
-	        * Discussion questions: ??
+	        * [Discussion questions]({{ site.baseurl }}/discussion/scenario_questions)
 <br><br> 
 
 * November 29
