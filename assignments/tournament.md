@@ -52,7 +52,7 @@ Write your data frame to a .csv file using the following
 line of code, substituting in the name of your data frame and the filename
 you want to use (your group number?):
 ```
-write.csv(your_data_fame, your_file.csv, header=T)
+write.csv(your_data_frame, your_file.csv, header=T)
 ```
 Finally, upload the .csv file to Canvas.
 
