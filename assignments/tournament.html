@@ -141,7 +141,7 @@ $(document).ready(function () {
 </div>
 <div id="formatting" class="section level3">
 <h3>Formatting</h3>
-<p>To make it easy for me to calculate the accuracy of your forecast, please follow these formatting guidelines. Create a data frame with two to four columns with the following names: Year, Forecast, LowerCI, UpperCI. The Year column should contain the integers 2014 to 2018, in order. The “Forecast” column contains your point forecasts for each year. The last two (CI) columns are optional. If you do report confidence intervals, please calculate the 95% intervals (if it is too late, don’t worry about it, just turn in what you have).</p>
+<p>To make it easy for me to calculate the accuracy of your forecast, please follow these formatting guidelines. Create a data frame with two to four columns with the following names: Year, Forecast, LowerCI, UpperCI. The Year column should contain the integers 2014 to 2018, in order. The “Forecast” column contains your point forecasts for each year. The point forecasts should be in the original units! If you fit on a transformed scale, please back transform. The last two (CI) columns are optional. If you do report confidence intervals, please calculate the 95% intervals (if it is too late, don’t worry about it, just turn in what you have). Again, these should be on the same scale as the observations.</p>
 <p>Write your data frame to a .csv file using the following line of code, substituting in the name of your data frame and the filename you want to use (your group number?):</p>
 <pre><code>write.csv(your_data_fame, your_file.csv, header=T)</code></pre>
 <p>Finally, upload the .csv file to Canvas.</p>

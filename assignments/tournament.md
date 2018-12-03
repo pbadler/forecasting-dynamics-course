@@ -42,9 +42,11 @@ two to four columns with the following names:
 Year, Forecast, LowerCI, UpperCI.
 The Year column should contain the integers 2014 to 2018, in order. 
 The "Forecast" column contains your point forecasts for each
-year. The last two (CI) columns are optional. If you do report confidence intervals,
+year. The point forecasts should be in the original units! If you fit
+on a transformed scale, please back transform. 
+The last two (CI) columns are optional. If you do report confidence intervals,
 please calculate the 95% intervals (if it is too late, don't worry about it, just
-turn in what you have).  
+turn in what you have). Again, these should be on the same scale as the observations.
 
 Write your data frame to a .csv file using the following
 line of code, substituting in the name of your data frame and the filename
