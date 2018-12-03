@@ -34,6 +34,26 @@ submit your R script.*
 prize will go to the team making the most accurate forecast that also quantifies 
 forecast uncertainty.
 
+### Formatting ###
+
+To make it easy for me to calculate the accuracy of your forecast,
+please follow these formatting guidelines. Create a data frame with
+two to four columns with the following names:
+Year, Forecast, LowerCI, UpperCI.
+The Year column should contain the integers 2014 to 2018, in order. 
+The "Forecast" column contains your point forecasts for each
+year. The last two (CI) columns are optional. If you do report confidence intervals,
+please calculate the 95% intervals (if it is too late, don't worry about it, just
+turn in what you have).  
+
+Write your data frame to a .csv file using the following
+line of code, substituting in the name of your data frame and the filename
+you want to use (your group number?):
+```
+write.csv(your_data_fame, your_file.csv, header=T)
+```
+Finally, upload the .csv file to Canvas.
+
 ### Background ###
 
 As we've discussed, mechanistic knowledge can improve forecasts. The forage
