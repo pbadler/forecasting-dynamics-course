@@ -5,7 +5,7 @@ output:
 layout: post
 ---
 
-1. Why are the authors so pessimistic about forecasting? Do you share their view
+1. Why are the authors so pessimistic about forecasting? Do you share their view?
 
 2. What do they suggest we do instead? Do you agree?
 
